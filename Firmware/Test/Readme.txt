@@ -1,1 +1,1 @@
-Armando la estructura necesaria para el Github
+Este archivo contiene todos los proyectos que se hacen para testear el DSC MC56F8006.
