@@ -6,7 +6,7 @@
 **     Component   : AsynchroSerial
 **     Version     : Component 02.611, Driver 02.07, CPU db: 3.00.209
 **     Compiler    : CodeWarrior DSP C Compiler
-**     Date/Time   : 2014-08-08, 23:09, # CodeGen: 9
+**     Date/Time   : 2014-08-19, 08:36, # CodeGen: 10
 **     Abstract    :
 **         This component "AsynchroSerial" implements an asynchronous serial
 **         communication. The component supports different settings of
@@ -401,31 +401,29 @@ void AS1_InterruptRx(void)
     }
     AS1_OnError();                     /* If yes then invoke user event */
   }
-//  if ((StatReg & SCI_STAT_RDRF_MASK) != 0x00U) { /* Is the receiver interrupt flag set? */
-//    Data = (AS1_TComData)getReg(SCI_DATA); /* Read data from the receiver */
-//    if(StatReg & (SCI_STAT_OR_MASK)) { /* Is HW overrun error detected? */
-//      setReg(SCI_STAT, 0U);            /* Reset error request flags */
-//      SerFlag |= (OVERRUN_ERR);        /* Set flag OVERRUN_ERR */
-//      OnFlags |= (ON_ERROR);           /* Set flag "OnError" */
-//    }
-//    if ((SerFlag & CHAR_IN_RX) == 0x00U) { /* Is SW overrun detected? */
-//      BufferRead = Data;
-//      OnFlags |= (ON_RX_CHAR);         /* Set flag "OnRxChar" */
-//    }
-//    else {
-//      SerFlag |= OVERRUN_ERR;          /* Set flag OVERRUN_ERR */
-//      OnFlags |= ON_ERROR;             /* Set flag "OnError" */
-//    }
-//    SerFlag |= CHAR_IN_RX;             /* Set flag "char in RX buffer" */
-//    if ((OnFlags & ON_ERROR) != 0x00U) { /* Was error flag detect? */
-//      AS1_OnError();                   /* If yes then invoke user event */
-//    }
-//    if ((OnFlags & ON_RX_CHAR) != 0x00U) { /* Is OnRxChar flag set? */
-//      AS1_OnRxChar();                  /* If yes then invoke user event */
-//    }
-  Data = (AS1_TComData)getReg(SCI_DATA); /* Read data from the receiver */
-  AS1_OnRxChar(Data);                  /* If yes then invoke user event */
-  //}
+  if ((StatReg & SCI_STAT_RDRF_MASK) != 0x00U) { /* Is the receiver interrupt flag set? */
+    Data = (AS1_TComData)getReg(SCI_DATA); /* Read data from the receiver */
+    if(StatReg & (SCI_STAT_OR_MASK)) { /* Is HW overrun error detected? */
+      setReg(SCI_STAT, 0U);            /* Reset error request flags */
+      SerFlag |= (OVERRUN_ERR);        /* Set flag OVERRUN_ERR */
+      OnFlags |= (ON_ERROR);           /* Set flag "OnError" */
+    }    
+    if ((SerFlag & CHAR_IN_RX) == 0x00U) { /* Is SW overrun detected? */
+      BufferRead = Data;
+      OnFlags |= (ON_RX_CHAR);         /* Set flag "OnRxChar" */
+    }
+    else {
+      SerFlag |= OVERRUN_ERR;          /* Set flag OVERRUN_ERR */
+      OnFlags |= ON_ERROR;             /* Set flag "OnError" */
+    }
+    //SerFlag |= CHAR_IN_RX;             /* Set flag "char in RX buffer" */
+    if ((OnFlags & ON_ERROR) != 0x00U) { /* Was error flag detect? */
+      AS1_OnError();                   /* If yes then invoke user event */
+    }
+    if ((OnFlags & ON_RX_CHAR) != 0x00U) { /* Is OnRxChar flag set? */
+      AS1_OnRxChar();                  /* If yes then invoke user event */
+    }
+  }
 }
 
 /*

@@ -6,7 +6,7 @@
 **     Component   : Init_ADC
 **     Version     : Component 01.350, Driver 01.01, CPU db: 3.00.209
 **     Compiler    : CodeWarrior DSP C Compiler
-**     Date/Time   : 2014-08-08, 23:09, # CodeGen: 9
+**     Date/Time   : 2014-08-19, 08:36, # CodeGen: 10
 **     Abstract    :
 **         This "Init_ADC" Peripheral Inspector implements the
 **         Analog-to-Digital converter module (ADC), basic 

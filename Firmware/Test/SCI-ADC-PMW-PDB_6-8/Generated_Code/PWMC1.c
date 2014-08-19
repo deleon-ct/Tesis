@@ -6,7 +6,7 @@
 **     Component   : PWMMC
 **     Version     : Component 01.779, Driver 01.32, CPU db: 3.00.209
 **     Compiler    : CodeWarrior DSP C Compiler
-**     Date/Time   : 2014-08-08, 23:09, # CodeGen: 9
+**     Date/Time   : 2014-08-19, 08:36, # CodeGen: 10
 **     Abstract    :
 **         This component "PWMMC" implements 6-channel center-aligned or 
 **         edge-aligned pulse-width modulator for AC motor control, which 

@@ -73,7 +73,7 @@ void AS1_OnError(void);
 ** ===================================================================
 */
 
-void AS1_OnRxChar(AS1_TComData dataRx);
+void AS1_OnRxChar(void);
 /*
 ** ===================================================================
 **     Event       :  AS1_OnRxChar (module Events)

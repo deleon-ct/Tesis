@@ -167,11 +167,16 @@ void actualizar_DC_PMW(word val_ADC)
 ** ===================================================================
 */
 void Inicializacion_Perifericos(void)
-{
-	setRegBit(PDB_SCR, ENA);
+{		
+	/* GPIO_A_PER: PE5=1,PE4=1,PE3=1,PE2=1,PE1=1,PE0=1 */
+	setRegBits(GPIO_A_PER, (GPIO_A_PER_PE3_MASK | GPIO_A_PER_PE4_MASK | GPIO_A_PER_PE5_MASK));      //Control Puerto A Periféricos
+	clrRegBits(GPIO_A_PUR, (GPIO_A_PUR_PU3_MASK | GPIO_A_PUR_PU4_MASK | GPIO_A_PUR_PU5_MASK));		//Deshabilitamos pull-up	
+	
+	setReg(ADC0_ADCSC1A, 0x45);		//Habiitamos interrupción del ADC y canal AD5
+	setRegBit(ADC0_ADCSC2, ADTRG);
+	setRegBits(SCI_CTRL1, (SCI_CTRL1_RE_MASK | SCI_CTRL1_REIE_MASK | SCI_CTRL1_RFIE_MASK));	
 	PWMC1_Enable();
-	setReg(ADC0_ADCSC1A, 0x54);		//Habiitamos interrupción del ADC y canal AD5
-	setRegBits(SCI_CTRL1, (SCI_CTRL1_RE_MASK | SCI_CTRL1_REIE_MASK | SCI_CTRL1_RFIE_MASK));
+	setRegBit(PDB_SCR, ENA);
 }
 
 void main(void)
@@ -198,7 +203,7 @@ void main(void)
   //Activamos el LED_ADC para indicar que esta conviertiendo
   led_test_On = 1;
   
-  //Iniciamos el 1º PDB - 2ºPWM - 3ºADC - 4ºSCI-RX
+  //Iniciamos el 1ºADC - 2ºSCI-RX - 3º PDB - 4ºPWM  
   Inicializacion_Perifericos();
   
   //PWM y SCI RX/TX no están habilitados

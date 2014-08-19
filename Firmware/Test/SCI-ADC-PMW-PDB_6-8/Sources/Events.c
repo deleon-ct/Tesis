@@ -80,10 +80,14 @@ void AS1_OnError(void)
 /* is set to 'yes' (#pragma interrupt saveall is generated before the ISR)           */
 #pragma interrupt called
 extern byte arrRx[CANTRXOK];
-void AS1_OnRxChar(AS1_TComData dataRx)
+void AS1_OnRxChar(void)
 {
   /* Write your code here ... */
 	static byte i = 0;
+	
+	register AS1_TComData dataRx;          /* Temporary variable for data */
+	dataRx = (AS1_TComData)getReg(SCI_DATA); /* Read data from the receiver */
+	
 	if(SCI_Saludo_PWM == 1)
 	{
 		arrRx[i] = dataRx;
@@ -101,6 +105,8 @@ void AS1_OnRxChar(AS1_TComData dataRx)
 	}
 	else if (SCI_Saludo_PWM == 2)
 	{		
+		arrRx[i] = dataRx;
+		
 		if ((arrRx[0] == 'q') && (arrRx[1] == 'w') && (arrRx[2] == 'e'))
 		{
 			enviar_Datos_SCI_PWM();
