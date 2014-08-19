@@ -1,0 +1,108 @@
+
+
+
+# .interrupt_vectorsboot
+#>00000000          F_vector_addr (linker command file)
+  00000000 00000004 interrupt_vectorsboot.text F_vectboot	(Vectors_c.obj)
+
+# .interrupt_vectors
+  00000000 00000066 interrupt_vectors.text F_vect	(Vectors_c.obj)
+
+# .ApplicationCode
+#>00000066          F_Pcode_start_addr (linker command file)
+  00000066 00000009 .text   FSetCV	(TI1_c.obj)
+  0000006F 00000013 .text   FSetPV	(TI1_c.obj)
+  00000082 00000012 .text   FTI1_Init	(TI1_c.obj)
+  00000094 00000011 .text   FTI1_Interrupt	(TI1_c.obj)
+  000000A5 0000001B .text   FHWEnDi	(PWMC1_c.obj)
+  000000C0 0000000C .text   FPWMC1_Enable	(PWMC1_c.obj)
+  000000CC 00000069 .text   FPWMC1_Init	(PWMC1_c.obj)
+  00000135 00000045 .text   FPWMC1_SetDuty	(PWMC1_c.obj)
+  0000017A 00000015 .text   FPDB_Init	(PDB_c.obj)
+  0000018F 00000007 .text   FCpu_Interrupt	(Cpu_c.obj)
+  00000196 0000004C .text   F_EntryPoint	(Cpu_c.obj)
+  000001E2 000000BA .text   FPE_low_level_init	(Cpu_c.obj)
+  0000029C 00000034 .text   FHWEnDi	(AS1_c.obj)
+  000002D0 0000002A .text   FAS1_InterruptRx	(AS1_c.obj)
+  000002FA 00000022 .text   FAS1_InterruptTx	(AS1_c.obj)
+  0000031C 00000012 .text   FAS1_Init	(AS1_c.obj)
+  0000032E 00000015 .text   FADC0_Init	(ADC0_c.obj)
+  00000343 00000018 .text   FINT_ADC0_Complete	(main_c.obj)
+  0000035B 000000A0 .text   Factualizar_DC_PMW	(main_c.obj)
+  000003FB 00000012 .text   FInicializacion_Perifericos	(main_c.obj)
+  0000040D 0000001D .text   Fmain	(main_c.obj)
+  0000042A 00000048 .text   FSaludo_Inicial_SCI	(SCI_c.obj)
+  00000472 0000005D .text   FArranque_Seguro_SCI	(SCI_c.obj)
+  000004CF 0000003E .text   FAgregar_Espacios_SCI	(SCI_c.obj)
+  0000050D 00000021 .text   Fenviar_Chr	(SCI_c.obj)
+  0000052E 0000007A .text   Fenviar_Datos_SCI_PWM	(SCI_c.obj)
+  000005A8 00000001 .text   FAS1_OnError	(Events_c.obj)
+  000005A9 0000009F .text   FAS1_OnRxChar	(Events_c.obj)
+  00000648 00000001 .text   FAS1_OnTxChar	(Events_c.obj)
+  00000649 00000013 .text   FTI1_OnInterrupt	(Events_c.obj)
+  0000065C 00000042 rtlib.text rtlib.text	(runtime 56800E smm.lib save_reg.o     )
+  0000065C 00000023 rtlib.text INTERRUPT_SAVEALL	(runtime 56800E smm.lib save_reg.o     )
+  0000067F 0000001F rtlib.text INTERRUPT_RESTOREALL	(runtime 56800E smm.lib save_reg.o     )
+  0000069E 00000045 startup.text Finit_56800_	(56F80xx_init_asm.obj)
+  0000069E 00000045 startup.text startup.text	(56F80xx_init_asm.obj)
+#>000006E3          F_Pcode_end_addr (linker command file)
+#>000006E4          __pROM_data_start (linker command file)
+
+# .data_in_p_flash_ROM
+#>00000001          __xRAM_data_start (linker command file)
+  00000001 00000009 .const.data F@28	(SCI_c.obj)
+#>0000000A          __xRAM_data_end (linker command file)
+#>00000009          __data_size (linker command file)
+
+# .ApplicationData
+#>0000000C          F_Xbss_start_addr (linker command file)
+#>0000000C          _START_BSS (linker command file)
+  0000000C 00000001 .bss    FEnUser	(PWMC1_c.obj)
+  0000000D 00000001 .bss    FBufferWrite	(AS1_c.obj)
+  0000000D 00000001 .bss    FSerFlag	(AS1_c.obj)
+  0000000E 00000001 .bss    FEnUser	(AS1_c.obj)
+  0000000E 00000001 .bss    FSCI_Saludo_PWM	(main_c.obj)
+  0000000F 00000001 .bss    Fled_test_On	(main_c.obj)
+  0000000F 00000001 .bss    Fmodificar_Ciclo	(main_c.obj)
+  00000010 00000001 .bss    Fvalor_ADC	(main_c.obj)
+  00000011 00000004 .bss    FarrRx	(main_c.obj)
+  00000015 00000001 .bss    F_ZZ12AS1_OnRxCharhE1i	(Events_c.obj)
+#>00000016          _END_BSS (linker command file)
+#>0000000A          F_Xbss_length (linker command file)
+#>00000018          _HEAP_ADDR (linker command file)
+#>00000100          _HEAP_SIZE (linker command file)
+#>00000118          _HEAP_END (linker command file)
+#>00000200          _min_stack_size (linker command file)
+#>00000118          _stack_addr (linker command file)
+#>00000318          _stack_end (linker command file)
+#>00000018          F_heap_addr (linker command file)
+#>00000118          F_heap_end (linker command file)
+#>00000118          F_Lstack_addr (linker command file)
+#>00000118          F_StackAddr (linker command file)
+#>00000317          F_StackEndAddr (linker command file)
+#>00000009          F_Ldata_size (linker command file)
+#>00000001          F_Ldata_RAM_addr (linker command file)
+#>000006E4          F_Ldata_ROM_addr (linker command file)
+#>00000000          F_Livt_size (linker command file)
+#>00000000          F_Livt_RAM_addr (linker command file)
+#>00000000          F_Livt_ROM_addr (linker command file)
+#>00000000          F_xROM_to_xRAM (linker command file)
+#>00000001          F_pROM_to_xRAM (linker command file)
+#>00000000          F_pROM_to_pRAM (linker command file)
+#>0000000C          F_start_bss (linker command file)
+#>00000016          F_end_bss (linker command file)
+#>00000318          __DATA_END (linker command file)
+
+
+# Memory map:
+  v_addr   p_addr   size     name
+  0000F000 0000F000 00000000            .x_Peripherals
+  00000000 00000000 00000004 .interrupt_vectorsboot .p_Interruptsboot
+  00000000 00000000 00000066 .interrupt_vectors .p_Interrupts
+  00000066 00000066 0000067E .ApplicationCode .p_Code
+  00000001 00000001 00000317 .ApplicationData .x_Data
+  000006E4 00000001 00000009 .data_in_p_flash_ROM .p_flash_ROM_data
+  00008000 00008000 00000400            .p_internal_RAM
+
+# Link start time: Fri Aug 08 23:16:26 2014
+# Link end time: Fri Aug 08 23:16:26 2014
