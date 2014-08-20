@@ -1,6 +1,6 @@
-Generated_Code/LED_SCI_c.obj: D:\Carli\Tesis\Dropbox\Root\1.Fuente\ Conmutada\Diseño\Firmware\Pruebas\SCI-ADC-PWM-PDB_6-8\Generated_Code\LED_SCI.c \
-	D:\Carli\Tesis\Dropbox\Root\1.Fuente\ Conmutada\Diseño\Firmware\Pruebas\SCI-ADC-PWM-PDB_6-8\Generated_Code\LED_SCI.h \
-	D:\Carli\Tesis\Dropbox\Root\1.Fuente\ Conmutada\Diseño\Firmware\Pruebas\SCI-ADC-PWM-PDB_6-8\Generated_Code\PE_Types.h \
+Generated_Code/LED_SCI_c.obj: D:\Ani\Ani\Tesis\Firmware\Test\SCI-ADC-PMW-PDB_6-8\Generated_Code\LED_SCI.c \
+	D:\Ani\Ani\Tesis\Firmware\Test\SCI-ADC-PMW-PDB_6-8\Generated_Code\LED_SCI.h \
+	D:\Ani\Ani\Tesis\Firmware\Test\SCI-ADC-PMW-PDB_6-8\Generated_Code\PE_Types.h \
 	D:\Freescale\CW\ MCU\ v10.6\MCU\M56800E\ Support\msl\MSL_C\MSL_Common\Include\stdint.h \
 	D:\Freescale\CW\ MCU\ v10.6\MCU\M56800E\ Support\msl\MSL_C\MSL_Common\Include\ansi_parms.h \
 	D:\Freescale\CW\ MCU\ v10.6\MCU\M56800E\ Support\msl\MSL_C\MSL_Common\Include\msl_c_version.h \
@@ -10,9 +10,9 @@ Generated_Code/LED_SCI_c.obj: D:\Carli\Tesis\Dropbox\Root\1.Fuente\ Conmutada\Di
 	D:\Freescale\CW\ MCU\ v10.6\MCU\M56800E\ Support\msl\MSL_C\MSL_Common\Include\cstdint \
 	D:\Freescale\CW\ MCU\ v10.6\MCU\M56800E\ Support\msl\MSL_C\MSL_Common\Include\limits_api.h \
 	D:\Freescale\CW\ MCU\ v10.6\MCU\M56800E\ Support\msl\MSL_C\MSL_Common\Include\msl_lib_ext1.h \
-	D:\Carli\Tesis\Dropbox\Root\1.Fuente\ Conmutada\Diseño\Firmware\Pruebas\SCI-ADC-PWM-PDB_6-8\Generated_Code\PE_Error.h \
-	D:\Carli\Tesis\Dropbox\Root\1.Fuente\ Conmutada\Diseño\Firmware\Pruebas\SCI-ADC-PWM-PDB_6-8\Generated_Code\PE_Const.h \
-	D:\Carli\Tesis\Dropbox\Root\1.Fuente\ Conmutada\Diseño\Firmware\Pruebas\SCI-ADC-PWM-PDB_6-8\Generated_Code\IO_Map.h \
-	D:\Carli\Tesis\Dropbox\Root\1.Fuente\ Conmutada\Diseño\Firmware\Pruebas\SCI-ADC-PWM-PDB_6-8\Generated_Code\Inhr1.h \
-	D:\Carli\Tesis\Dropbox\Root\1.Fuente\ Conmutada\Diseño\Firmware\Pruebas\SCI-ADC-PWM-PDB_6-8\Generated_Code\Cpu.h \
-	D:\Carli\Tesis\Dropbox\Root\1.Fuente\ Conmutada\Diseño\Firmware\Pruebas\SCI-ADC-PWM-PDB_6-8\Generated_Code\assert.h 
+	D:\Ani\Ani\Tesis\Firmware\Test\SCI-ADC-PMW-PDB_6-8\Generated_Code\PE_Error.h \
+	D:\Ani\Ani\Tesis\Firmware\Test\SCI-ADC-PMW-PDB_6-8\Generated_Code\PE_Const.h \
+	D:\Ani\Ani\Tesis\Firmware\Test\SCI-ADC-PMW-PDB_6-8\Generated_Code\IO_Map.h \
+	D:\Ani\Ani\Tesis\Firmware\Test\SCI-ADC-PMW-PDB_6-8\Generated_Code\Inhr1.h \
+	D:\Ani\Ani\Tesis\Firmware\Test\SCI-ADC-PMW-PDB_6-8\Generated_Code\Cpu.h \
+	D:\Ani\Ani\Tesis\Firmware\Test\SCI-ADC-PMW-PDB_6-8\Generated_Code\assert.h 

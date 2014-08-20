@@ -4,13 +4,13 @@
 ##
 ##     Filename  : FLASH_SDM.cmd
 ##
-##     Project   : SCI-ADC-PWM-PDB_6-8
+##     Project   : SCI-ADC-PMW-PDB_6-8
 ##
 ##     Processor : MC56F8006_48_LQFP
 ##
 ##     Compiler  : CodeWarrior DSP C Compiler
 ##
-##     Date/Time : 2014-08-06, 13:21, # CodeGen: 0
+##     Date/Time : 2014-08-20, 19:32, # CodeGen: 0
 ##
 ##     Abstract  :
 ##

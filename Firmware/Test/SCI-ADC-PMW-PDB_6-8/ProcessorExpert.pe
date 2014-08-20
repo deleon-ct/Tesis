@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <PEproject>
   <Header>
-    <Name>SCI-ADC-PWM-PDB_6-8</Name>
+    <Name>SCI-ADC-PMW-PDB_6-8</Name>
     <SavedBy>DeLeon</SavedBy>
     <ModificationStamp>10</ModificationStamp>
-    <Date>2014-08-19</Date>
+    <Date>2014-08-20</Date>
     <IDE>Eclipse IDE</IDE>
     <PEversion>1.9.1.RT6_b1423-0421</PEversion>
   </Header>

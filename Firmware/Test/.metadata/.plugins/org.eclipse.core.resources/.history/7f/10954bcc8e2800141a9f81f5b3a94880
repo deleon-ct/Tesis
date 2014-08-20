@@ -1,0 +1,36 @@
+<CodeGenerationInfo>
+  <ToolchainSettings>
+    <option>
+      <name>PE_G_4PEx_ToolChain_Compiler_SearchUserPaths</name>
+      <values lines_count="2">
+        <Line>"${ProjDirPath}/Sources"</Line>
+        <Line>"${ProjDirPath}/Generated_Code"</Line>
+      </values>
+    </option>
+  </ToolchainSettings>
+  <GeneratedFilesList>
+    <GeneratedByPE>
+      <File Name="Generated_Code/Cpu.c" FileDate="2014-08-20, 12:11:15" FileAge="1408547475192" FileType="45637" CompNumb="2" />
+      <File Name="Project_Settings/Startup_Code/56F80xx_init.asm" FileDate="2014-08-20, 12:11:15" FileAge="1408547475092" FileType="16384" CompNumb="2" />
+      <File Name="Generated_Code/PE_Types.h" FileDate="2014-08-20, 12:11:15" FileAge="1408547475232" FileType="45637" />
+      <File Name="Documentation/Control_Tension_ADC_PWM_Settings.xml" FileDate="2014-08-20, 12:11:15" FileAge="1408547475252" FileType="3072" />
+      <File Name="Generated_Code/IO_Map.h" FileDate="2014-08-20, 12:11:15" FileAge="1408547475222" FileType="45637" />
+      <File Name="Documentation/doxygen/RoutingReport.txt" FileDate="2014-08-20, 12:11:15" FileAge="1408547475182" FileType="45637" CompNumb="2" />
+      <File Name="Documentation/doxygen/pex.css" FileDate="2014-08-20, 12:11:14" FileAge="1408547474912" FileType="16384" CompNumb="2" />
+      <File Name="Sources/main.c" FileDate="2014-08-20, 12:11:15" FileAge="1408547475202" FileType="128" />
+      <File Name="Generated_Code/PE_Error.h" FileDate="2014-08-20, 12:11:15" FileAge="1408547475232" FileType="45637" />
+      <File Name="Documentation/Control_Tension_ADC_PWM_SIGNALS.txt" FileDate="2014-08-20, 12:11:15" FileAge="1408547475242" FileType="3072" />
+      <File Name="Documentation/doxygen/pex.doxyfile" FileDate="2014-08-20, 12:11:15" FileAge="1408547475172" FileType="45637" CompNumb="2" />
+      <File Name="Project_Settings/Linker_Files/FLASH_SDM.cmd" FileDate="2014-08-20, 12:11:15" FileAge="1408547475192" FileType="8" CompNumb="2" />
+      <File Name="Documentation/Control_Tension_ADC_PWM.txt" FileDate="2014-08-20, 12:11:15" FileAge="1408547475262" FileType="3072" />
+      <File Name="Sources/Events.h" FileDate="2014-08-20, 12:11:15" FileAge="1408547475162" FileType="131328" />
+      <File Name="Sources/Events.c" FileDate="2014-08-20, 12:11:15" FileAge="1408547475152" FileType="131328" />
+      <File Name="Generated_Code/assert.h" FileDate="2014-08-20, 12:11:15" FileAge="1408547475242" FileType="45637" />
+      <File Name="Generated_Code/Cpu.h" FileDate="2014-08-20, 12:11:15" FileAge="1408547475192" FileType="45637" CompNumb="2" />
+      <File Name="Generated_Code/PE_Const.h" FileDate="2014-08-20, 12:11:15" FileAge="1408547475232" FileType="45637" />
+      <File Name="Generated_Code/Vectors.c" FileDate="2014-08-20, 12:11:15" FileAge="1408547475182" FileType="45637" CompNumb="2" />
+      <File Name="Documentation/doxygen/Control_Tension_ADC_PWM.txt" FileDate="2014-08-20, 12:11:15" FileAge="1408547475182" FileType="45637" CompNumb="2" />
+    </GeneratedByPE>
+  </GeneratedFilesList>
+  <CodeGenReference>1</CodeGenReference>
+</CodeGenerationInfo>

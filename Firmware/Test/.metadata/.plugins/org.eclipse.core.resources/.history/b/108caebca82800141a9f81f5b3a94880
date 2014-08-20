@@ -1,0 +1,35 @@
+/*
+ * Global.h
+ *
+ *  Created on: Aug 20, 2014
+ *      Author: DeLeon
+ */
+
+#ifndef GLOBAL_H_
+#define GLOBAL_H_
+
+/* Variables globales y Macros */
+
+/*****************************************************************************/
+/*	Estado del Led 
+ * 	Valor		Estado					Velocidad de parpadeo(Segundos)	     */
+/*	0  			Esperando clave			2							 
+ * 	1			Modificando	PWM			0.2
+ * 	2			Tensión estabilizada	1						   	
+ *****************************************************************************/
+#define ESPERANDO_CLAVE	0
+#define CAMBIANDO_PWM 	1
+#define TENSION_FIJA	2
+uint16_t ledEstado;
+uint16_t borrarContador;
+
+
+/* SCI */
+AS1_TComData arrRx[CANTRXOK];
+AS1_TComData SCI_Saludo_PWM;
+AS1_TComData valorTension_SCI;
+
+/* Propósito general */
+uint16_t modificarSalida;
+
+#endif /* GLOBAL_H_ */
