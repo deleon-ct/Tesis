@@ -1,0 +1,46 @@
+<CodeGenerationInfo>
+  <ToolchainSettings>
+    <option>
+      <name>PE_G_4PEx_ToolChain_Compiler_SearchUserPaths</name>
+      <values lines_count="2">
+        <Line>"${ProjDirPath}/Sources"</Line>
+        <Line>"${ProjDirPath}/Generated_Code"</Line>
+      </values>
+    </option>
+  </ToolchainSettings>
+  <GeneratedFilesList>
+    <GeneratedByPE>
+      <File Name="Generated_Code/PWM_Timer.h" FileDate="2014-08-25, 11:25:12" FileAge="1408976712295" FileType="45637" CompNumb="27" />
+      <File Name="Sources/Events.h" FileDate="2014-08-25, 12:06:55" FileAge="1408979215422" FileType="131328" />
+      <File Name="Generated_Code/PWM_Timer.c" FileDate="2014-08-25, 12:06:55" FileAge="1408979215381" FileType="45637" CompNumb="27" />
+      <File Name="Documentation/doxygen/Prueba_PWM1.txt" FileDate="2014-08-25, 09:21:49" FileAge="1408969309509" FileType="45637" CompNumb="2" />
+      <File Name="Sources/Events.c" FileDate="2014-08-25, 11:30:04" FileAge="1408977004101" FileType="131328" />
+      <File Name="Documentation/Prueba_PWM1_SIGNALS.txt" FileDate="2014-08-25, 12:06:55" FileAge="1408979215442" FileType="3072" />
+      <File Name="Generated_Code/Inhr2.h" FileDate="2014-08-25, 11:25:52" FileAge="1408976752685" FileType="45637" CompNumb="29" />
+      <File Name="Documentation/doxygen/pex.css" FileDate="2014-08-25, 09:21:49" FileAge="1408969309261" FileType="16384" CompNumb="2" />
+      <File Name="Generated_Code/Inhr2.c" FileDate="2014-08-25, 11:25:52" FileAge="1408976752682" FileType="45637" CompNumb="29" />
+      <File Name="Generated_Code/BTN1.h" FileDate="2014-08-25, 09:25:49" FileAge="1408969549844" FileType="45637" CompNumb="6" />
+      <File Name="Documentation/Prueba_PWM1_Settings.xml" FileDate="2014-08-25, 12:06:55" FileAge="1408979215462" FileType="3072" />
+      <File Name="Generated_Code/Inhr1.h" FileDate="2014-08-25, 09:25:49" FileAge="1408969549850" FileType="45637" CompNumb="7" />
+      <File Name="Generated_Code/BTN1.c" FileDate="2014-08-25, 09:25:49" FileAge="1408969549838" FileType="45637" CompNumb="6" />
+      <File Name="Generated_Code/Inhr1.c" FileDate="2014-08-25, 09:25:49" FileAge="1408969549847" FileType="45637" CompNumb="7" />
+      <File Name="Generated_Code/LED1.h" FileDate="2014-08-25, 11:25:52" FileAge="1408976752678" FileType="45637" CompNumb="28" />
+      <File Name="Sources/main.c" FileDate="2014-08-25, 12:06:55" FileAge="1408979215391" FileType="128" />
+      <File Name="Generated_Code/LED1.c" FileDate="2014-08-25, 11:25:52" FileAge="1408976752674" FileType="45637" CompNumb="28" />
+      <File Name="Project_Settings/Startup_Code/56F80xx_init.asm" FileDate="2014-08-25, 09:21:49" FileAge="1408969309435" FileType="16384" CompNumb="2" />
+      <File Name="Generated_Code/Vectors.c" FileDate="2014-08-25, 12:06:55" FileAge="1408979215412" FileType="45637" CompNumb="2" />
+      <File Name="Generated_Code/Cpu.h" FileDate="2014-08-25, 12:06:55" FileAge="1408979215404" FileType="45637" CompNumb="2" />
+      <File Name="Generated_Code/IO_Map.h" FileDate="2014-08-25, 09:21:49" FileAge="1408969309532" FileType="45637" />
+      <File Name="Documentation/doxygen/pex.doxyfile" FileDate="2014-08-25, 09:21:49" FileAge="1408969309503" FileType="45637" CompNumb="2" />
+      <File Name="Generated_Code/Cpu.c" FileDate="2014-08-25, 12:06:55" FileAge="1408979215410" FileType="45637" CompNumb="2" />
+      <File Name="Project_Settings/Linker_Files/FLASH_SDM.cmd" FileDate="2014-08-25, 09:21:49" FileAge="1408969309518" FileType="8" CompNumb="2" />
+      <File Name="Documentation/doxygen/RoutingReport.txt" FileDate="2014-08-25, 09:21:49" FileAge="1408969309506" FileType="45637" CompNumb="2" />
+      <File Name="Generated_Code/assert.h" FileDate="2014-08-25, 09:21:49" FileAge="1408969309556" FileType="45637" />
+      <File Name="Generated_Code/PE_Const.h" FileDate="2014-08-25, 09:21:49" FileAge="1408969309536" FileType="45637" />
+      <File Name="Generated_Code/PE_Types.h" FileDate="2014-08-25, 09:21:49" FileAge="1408969309552" FileType="45637" />
+      <File Name="Generated_Code/PE_Error.h" FileDate="2014-08-25, 09:21:49" FileAge="1408969309547" FileType="45637" />
+      <File Name="Documentation/Prueba_PWM1.txt" FileDate="2014-08-25, 12:06:55" FileAge="1408979215472" FileType="3072" />
+    </GeneratedByPE>
+  </GeneratedFilesList>
+  <CodeGenReference>11</CodeGenReference>
+</CodeGenerationInfo>

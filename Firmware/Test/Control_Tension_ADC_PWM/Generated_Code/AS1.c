@@ -350,7 +350,7 @@ void AS1_InterruptRx(void)
       SerFlag |= OVERRUN_ERR;          /* Set flag OVERRUN_ERR */
       OnFlags |= ON_ERROR;             /* Set flag "OnError" */
     }
-    SerFlag |= CHAR_IN_RX;             /* Set flag "char in RX buffer" */
+    //SerFlag |= CHAR_IN_RX;             /* Set flag "char in RX buffer" */
     if ((OnFlags & ON_ERROR) != 0x00U) { /* Was error flag detect? */
       AS1_OnError();                   /* If yes then invoke user event */
     }

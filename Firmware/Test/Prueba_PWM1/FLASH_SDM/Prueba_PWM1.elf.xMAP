@@ -1,0 +1,78 @@
+
+
+
+# .interrupt_vectorsboot
+#>00000000          F_vector_addr (linker command file)
+  00000000 00000004 interrupt_vectorsboot.text F_vectboot	(Vectors_c.obj)
+
+# .interrupt_vectors
+  00000000 00000066 interrupt_vectors.text F_vect	(Vectors_c.obj)
+
+# .ApplicationCode
+#>00000066          F_Pcode_start_addr (linker command file)
+  00000066 0000008D .text   FPWM_Timer_Init	(PWM_Timer_c.obj)
+  000000F3 00000011 .text   FInhr1_Interrupt	(Inhr1_c.obj)
+  00000104 00000007 .text   FCpu_Interrupt	(Cpu_c.obj)
+  0000010B 0000004C .text   F_EntryPoint	(Cpu_c.obj)
+  00000157 000000C8 .text   FPE_low_level_init	(Cpu_c.obj)
+  0000021F 00000003 .text   FInhr1_OnInterrupt	(BTN1_c.obj)
+  00000222 00000003 .text   FBTN1_Init	(BTN1_c.obj)
+  00000225 00000008 .text   Fmain	(main_c.obj)
+  0000022D 0000005D .text   FBTN1_OnButton	(Events_c.obj)
+  0000028A 00000042 rtlib.text rtlib.text	(runtime 56800E smm.lib save_reg.o     )
+  0000028A 00000023 rtlib.text INTERRUPT_SAVEALL	(runtime 56800E smm.lib save_reg.o     )
+  000002AD 0000001F rtlib.text INTERRUPT_RESTOREALL	(runtime 56800E smm.lib save_reg.o     )
+  000002CC 00000045 startup.text Finit_56800_	(56F80xx_init_asm.obj)
+  000002CC 00000045 startup.text startup.text	(56F80xx_init_asm.obj)
+#>00000311          F_Pcode_end_addr (linker command file)
+#>00000312          __pROM_data_start (linker command file)
+
+# .data_in_p_flash_ROM
+#>00000001          __xRAM_data_start (linker command file)
+#>00000002          __xRAM_data_end (linker command file)
+#>00000001          __data_size (linker command file)
+
+# .ApplicationData
+#>00000004          F_Xbss_start_addr (linker command file)
+#>00000004          _START_BSS (linker command file)
+  00000004 00000002 .bss    FCounted	(BTN1_c.obj)
+  00000006 00000001 .bss    F_ZZ13BTN1_OnButtonvE8contador	(Events_c.obj)
+#>00000008          _END_BSS (linker command file)
+#>00000004          F_Xbss_length (linker command file)
+#>00000008          _HEAP_ADDR (linker command file)
+#>00000100          _HEAP_SIZE (linker command file)
+#>00000108          _HEAP_END (linker command file)
+#>00000200          _min_stack_size (linker command file)
+#>00000108          _stack_addr (linker command file)
+#>00000308          _stack_end (linker command file)
+#>00000008          F_heap_addr (linker command file)
+#>00000108          F_heap_end (linker command file)
+#>00000108          F_Lstack_addr (linker command file)
+#>00000108          F_StackAddr (linker command file)
+#>00000307          F_StackEndAddr (linker command file)
+#>00000001          F_Ldata_size (linker command file)
+#>00000001          F_Ldata_RAM_addr (linker command file)
+#>00000312          F_Ldata_ROM_addr (linker command file)
+#>00000000          F_Livt_size (linker command file)
+#>00000000          F_Livt_RAM_addr (linker command file)
+#>00000000          F_Livt_ROM_addr (linker command file)
+#>00000000          F_xROM_to_xRAM (linker command file)
+#>00000001          F_pROM_to_xRAM (linker command file)
+#>00000000          F_pROM_to_pRAM (linker command file)
+#>00000004          F_start_bss (linker command file)
+#>00000008          F_end_bss (linker command file)
+#>00000308          __DATA_END (linker command file)
+
+
+# Memory map:
+  v_addr   p_addr   size     name
+  0000F000 0000F000 00000000            .x_Peripherals
+  00000000 00000000 00000004 .interrupt_vectorsboot .p_Interruptsboot
+  00000000 00000000 00000066 .interrupt_vectors .p_Interrupts
+  00000066 00000066 000002AC .ApplicationCode .p_Code
+  00000001 00000001 00000307 .ApplicationData .x_Data
+  00000312 00000001 00000001 .data_in_p_flash_ROM .p_flash_ROM_data
+  00008000 00008000 00000400            .p_internal_RAM
+
+# Link start time: Mon Aug 25 13:28:57 2014
+# Link end time: Mon Aug 25 13:28:57 2014

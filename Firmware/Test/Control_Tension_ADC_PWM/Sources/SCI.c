@@ -28,19 +28,19 @@ void Saludo_Inicial_SCI(void)
 	byte i;
 	byte arregloBienvenida[CANT1] = {'B', 'i', 'e', 'n', 'v', 'e', 'n', 'i', 'd', 'o', 13, 10, 'P', 'a', 's', 's', ':', ' '};
 	
-	//Habilitamos el TX y deshabilitamos RX
-	setRegBit(SCI_CTRL1, TE);
+	//Deshabilitamos RX
+	//setRegBit(SCI_CTRL1, TE);
 	clrRegBit(SCI_CTRL1, RE);
 	
 	for (i = 0; i < CANT1; i++)
 	{
-		LED_TEST_On();
-		getReg(SCI_STAT);
-		setReg(SCI_DATA, arregloBienvenida[i]);
-		while(!(SCI_STAT & SCI_STAT_TIDLE_MASK)){}
+		Enviar_Chr(arregloBienvenida[i]);
+//		getReg(SCI_STAT);
+//		setReg(SCI_DATA, arregloBienvenida[i]);
+//		while(!(SCI_STAT & SCI_STAT_TIDLE_MASK)){}
 	}				
 	//Deshabilitamos el TX y RX
-	clrRegBit(SCI_CTRL1, TE);
+	//clrRegBit(SCI_CTRL1, TE);
 }
 
 /*

@@ -4,7 +4,7 @@
     <Name>Control_Tension_ADC_PWM</Name>
     <SavedBy>DeLeon</SavedBy>
     <ModificationStamp>5</ModificationStamp>
-    <Date>2014-08-20</Date>
+    <Date>2014-08-21</Date>
     <IDE>Eclipse IDE</IDE>
     <PEversion>1.9.1.RT6_b1423-0421</PEversion>
   </Header>
@@ -2100,7 +2100,7 @@
       <ItemState>
         <ItemSymbol>PLLvalueLow</ItemSymbol>
         <PropertyModelIsAutomatic>false</PropertyModelIsAutomatic>
-        <Value>0</Value>
+        <Value>192</Value>
       </ItemState>
       <ItemState>
         <ItemSymbol>ADC1_ExportedClockFromADC0Low</ItemSymbol>
@@ -2168,7 +2168,7 @@
       <ItemState>
         <ItemSymbol>PLLvalueSlow</ItemSymbol>
         <PropertyModelIsAutomatic>false</PropertyModelIsAutomatic>
-        <Value>0</Value>
+        <Value>192</Value>
       </ItemState>
       <ItemState>
         <ItemSymbol>ADC1_ExportedClockFromADC0Slow</ItemSymbol>
@@ -9996,7 +9996,7 @@
         <ItemSymbol>fpin5</ItemSymbol>
         <ReadOnly>false</ReadOnly>
         <UserReadOnly>false</UserReadOnly>
-        <Value />
+        <Value>GPIOB6_ANA13_SDA_RXD_CMP0_P2_CLKIN</Value>
         <ItemWasNeverEnabledInChgScript>true</ItemWasNeverEnabledInChgScript>
         <SharedPrphMode>false</SharedPrphMode>
       </ItemState>
@@ -10078,7 +10078,7 @@
         <ItemSymbol>fpin6</ItemSymbol>
         <ReadOnly>false</ReadOnly>
         <UserReadOnly>false</UserReadOnly>
-        <Value />
+        <Value>GPIOB6_ANA13_SDA_RXD_CMP0_P2_CLKIN</Value>
         <ItemWasNeverEnabledInChgScript>true</ItemWasNeverEnabledInChgScript>
         <SharedPrphMode>false</SharedPrphMode>
       </ItemState>
@@ -10160,7 +10160,7 @@
         <ItemSymbol>fpin7</ItemSymbol>
         <ReadOnly>false</ReadOnly>
         <UserReadOnly>false</UserReadOnly>
-        <Value />
+        <Value>GPIOB6_ANA13_SDA_RXD_CMP0_P2_CLKIN</Value>
         <ItemWasNeverEnabledInChgScript>true</ItemWasNeverEnabledInChgScript>
         <SharedPrphMode>false</SharedPrphMode>
       </ItemState>
@@ -10242,7 +10242,7 @@
         <ItemSymbol>fpin8</ItemSymbol>
         <ReadOnly>false</ReadOnly>
         <UserReadOnly>false</UserReadOnly>
-        <Value />
+        <Value>GPIOB6_ANA13_SDA_RXD_CMP0_P2_CLKIN</Value>
         <ItemWasNeverEnabledInChgScript>true</ItemWasNeverEnabledInChgScript>
         <SharedPrphMode>false</SharedPrphMode>
       </ItemState>

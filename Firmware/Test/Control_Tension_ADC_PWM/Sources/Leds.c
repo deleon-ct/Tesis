@@ -6,10 +6,11 @@
  *      Author: DeLeon
  */
 
-#include "Cpu.h"
+#include "Leds.h"
 #include "Global.h"
 
-void Led_Estado(uint16_t estado)
+//void Led_Estado(uint16_t estado)
+void Led_Estado(unsigned int estado)
 {
 	ledEstado = estado;
 	borrarContador = 0;

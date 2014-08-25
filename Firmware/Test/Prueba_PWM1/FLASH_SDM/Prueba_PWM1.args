@@ -1,0 +1,19 @@
+"./Generated_Code/Vectors_c.obj"
+"./Generated_Code/PWM_Timer_c.obj"
+"./Generated_Code/LED1_c.obj"
+"./Generated_Code/Inhr2_c.obj"
+"./Generated_Code/Inhr1_c.obj"
+"./Generated_Code/Cpu_c.obj"
+"./Generated_Code/BTN1_c.obj"
+"./Project_Settings/Startup_Code/56F80xx_init_asm.obj"
+"./Sources/main_c.obj"
+"./Sources/Events_c.obj"
+-msgstyle parseable
+-g
+-nostdlib
+"$(ProjDirPath)/Project_Settings/Linker_Files/FLASH_SDM.cmd"
+-main F_EntryPoint
+-L"$(MCUToolsBaseDirEnv)/M56800E Support/msl/MSL_C/DSP_56800E/lib"
+-map 
+-l${VALUE}"$(MCUToolsBaseDirEnv)/M56800E Support/runtime_56800E/lib/runtime 56800E smm.lib"
+-l${VALUE}"$(MCUToolsBaseDirEnv)/M56800E Support/msl/MSL_C/DSP_56800E/lib/MSL C 56800E smm.lib"

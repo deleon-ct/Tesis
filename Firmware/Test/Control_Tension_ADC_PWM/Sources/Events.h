@@ -47,8 +47,15 @@
 #include "Inhr3.h"
 
 /* Variables globales */
-extern AS1_TComData valorTension_SCI;
-extern uint16_t modificarSalida;
+//extern AS1_TComData valorTension_SCI;
+//extern uint16_t modificarSalida;
+extern unsigned int ledEstado;
+extern byte valorTension_SCI;
+extern UInt16 modificarSalida;
+extern bool timeOut_reach;
+extern bool timeOut_Start;
+extern UInt16 tensionAlcanzada;
+extern UInt16 valorTension;
 
 void TI1_OnInterrupt(void);
 /*

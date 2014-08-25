@@ -98,7 +98,7 @@
     </GenFiles>
     <SignalListFile>Documentation\Control_Tension_ADC_PWM_SIGNALS.txt</SignalListFile>
     <DestinationCompiler>MetrowerksDSP</DestinationCompiler>
-    <ProjectModificationStamp>5</ProjectModificationStamp>
+    <ProjectModificationStamp>6</ProjectModificationStamp>
   </Options>
   <CpuID_2>
     <Generated>true</Generated>

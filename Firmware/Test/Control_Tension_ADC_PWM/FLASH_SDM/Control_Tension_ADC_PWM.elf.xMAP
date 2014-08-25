@@ -1,0 +1,122 @@
+
+
+
+# .interrupt_vectorsboot
+#>00000000          F_vector_addr (linker command file)
+  00000000 00000004 interrupt_vectorsboot.text F_vectboot	(Vectors_c.obj)
+
+# .interrupt_vectors
+  00000000 00000066 interrupt_vectors.text F_vect	(Vectors_c.obj)
+
+# .ApplicationCode
+#>00000066          F_Pcode_start_addr (linker command file)
+  00000066 00000009 .text   FSetCV	(TI1_c.obj)
+  0000006F 00000012 .text   FSetPV	(TI1_c.obj)
+  00000081 00000011 .text   FTI1_Init	(TI1_c.obj)
+  00000092 00000011 .text   FTI1_Interrupt	(TI1_c.obj)
+  000000A3 0000001B .text   FHWEnDi	(PWMC1_c.obj)
+  000000BE 0000000C .text   FPWMC1_Enable	(PWMC1_c.obj)
+  000000CA 0000000B .text   FPWMC1_Disable	(PWMC1_c.obj)
+  000000D5 0000005A .text   FPWMC1_Init	(PWMC1_c.obj)
+  0000012F 00000039 .text   FPWMC1_SetDuty	(PWMC1_c.obj)
+  00000168 00000015 .text   FPDB_Init	(PDB_c.obj)
+  0000017D 00000007 .text   FCpu_Interrupt	(Cpu_c.obj)
+  00000184 00000059 .text   F_EntryPoint	(Cpu_c.obj)
+  000001DD 000000BA .text   FPE_low_level_init	(Cpu_c.obj)
+  00000297 0000000A .text   FHWEnDi	(AS1_c.obj)
+  000002A1 0000005A .text   FAS1_InterruptRx	(AS1_c.obj)
+  000002FB 00000022 .text   FAS1_InterruptTx	(AS1_c.obj)
+  0000031D 0000000F .text   FAS1_Init	(AS1_c.obj)
+  0000032C 00000015 .text   FADC0_Init	(ADC0_c.obj)
+  00000341 00000010 .text   FINT_ADC0_Complete	(main_c.obj)
+  00000351 00000027 .text   Fmain	(main_c.obj)
+  00000378 00000029 .text   FSaludo_Inicial_SCI	(SCI_c.obj)
+  000003A1 0000002E .text   FArranque_Seguro_SCI	(SCI_c.obj)
+  000003CF 0000003E .text   FAgregar_Espacios_SCI	(SCI_c.obj)
+  0000040D 00000021 .text   FEnviar_Chr	(SCI_c.obj)
+  0000042E 00000008 .text   FLed_Estado	(Leds_c.obj)
+  00000436 00000021 .text   FActivar_Salida	(Func_Sistema_c.obj)
+  00000457 00000065 .text   FAlcanzando_Tension	(Func_Sistema_c.obj)
+  000004BC 00000012 .text   FDesactivarPerifericos	(Func_Sistema_c.obj)
+  000004CE 00000017 .text   FInicializacion_Perifericos	(Func_Sistema_c.obj)
+  000004E5 00000004 .text   FActivar_TimeOut	(Func_Sistema_c.obj)
+  000004E9 00000028 .text   FCambiar_PMW	(Func_Sistema_c.obj)
+  00000511 0000007D .text   FTI1_OnInterrupt	(Events_c.obj)
+  0000058E 00000001 .text   FAS1_OnError	(Events_c.obj)
+  0000058F 00000092 .text   FAS1_OnRxChar	(Events_c.obj)
+  00000621 00000001 .text   FAS1_OnTxChar	(Events_c.obj)
+  00000622 00000042 rtlib.text rtlib.text	(runtime 56800E smm.lib save_reg.o     )
+  00000622 00000023 rtlib.text INTERRUPT_SAVEALL	(runtime 56800E smm.lib save_reg.o     )
+  00000645 0000001F rtlib.text INTERRUPT_RESTOREALL	(runtime 56800E smm.lib save_reg.o     )
+  00000664 00000045 startup.text Finit_56800_	(56F80xx_init_asm.obj)
+  00000664 00000045 startup.text startup.text	(56F80xx_init_asm.obj)
+#>000006A9          F_Pcode_end_addr (linker command file)
+#>000006AA          __pROM_data_start (linker command file)
+
+# .data_in_p_flash_ROM
+#>00000001          __xRAM_data_start (linker command file)
+  00000001 00000009 .const.data F@25	(SCI_c.obj)
+#>0000000A          __xRAM_data_end (linker command file)
+#>00000009          __data_size (linker command file)
+
+# .ApplicationData
+#>0000000C          F_Xbss_start_addr (linker command file)
+#>0000000C          _START_BSS (linker command file)
+  0000000C 00000001 .bss    FEnUser	(PWMC1_c.obj)
+  0000000D 00000001 .bss    FBufferRead	(AS1_c.obj)
+  0000000D 00000001 .bss    FSerFlag	(AS1_c.obj)
+  0000000E 00000001 .bss    FtimeOut_reach	(main_c.obj)
+  0000000E 00000001 .bss    FtimeOut_Start	(main_c.obj)
+  0000000F 00000001 .bss    FmodificarSalida	(main_c.obj)
+  00000010 00000001 .bss    FtensionAlcanzada	(main_c.obj)
+  00000011 00000001 .bss    FvalorTension	(main_c.obj)
+  00000012 00000001 .bss    Fvalor_ADC	(main_c.obj)
+  00000013 00000001 .bss    FvalorTension_SCI	(main_c.obj)
+  00000013 00000001 .bss    FSCI_Saludo_PWM	(main_c.obj)
+  00000014 00000002 .bss    FarrRx	(main_c.obj)
+  00000016 00000001 .bss    FborrarContador	(main_c.obj)
+  00000017 00000001 .bss    FledEstado	(main_c.obj)
+  00000018 00000001 .bss    F_ZZ11Cambiar_PMWjE9valor_PWM	(Func_Sistema_c.obj)
+  00000019 00000001 .bss    F_ZZ15TI1_OnInterruptvE8contador	(Events_c.obj)
+  0000001A 00000001 .bss    F_ZZ15TI1_OnInterruptvE16contador_timeOut_0	(Events_c.obj)
+  0000001B 00000001 .bss    F_ZZ15TI1_OnInterruptvE15ventana_tension_1	(Events_c.obj)
+  0000001C 00000001 .bss    F_ZZ12AS1_OnRxCharvE1i	(Events_c.obj)
+#>0000001E          _END_BSS (linker command file)
+#>00000012          F_Xbss_length (linker command file)
+#>00000020          _HEAP_ADDR (linker command file)
+#>00000100          _HEAP_SIZE (linker command file)
+#>00000120          _HEAP_END (linker command file)
+#>00000200          _min_stack_size (linker command file)
+#>00000120          _stack_addr (linker command file)
+#>00000320          _stack_end (linker command file)
+#>00000020          F_heap_addr (linker command file)
+#>00000120          F_heap_end (linker command file)
+#>00000120          F_Lstack_addr (linker command file)
+#>00000120          F_StackAddr (linker command file)
+#>0000031F          F_StackEndAddr (linker command file)
+#>00000009          F_Ldata_size (linker command file)
+#>00000001          F_Ldata_RAM_addr (linker command file)
+#>000006AA          F_Ldata_ROM_addr (linker command file)
+#>00000000          F_Livt_size (linker command file)
+#>00000000          F_Livt_RAM_addr (linker command file)
+#>00000000          F_Livt_ROM_addr (linker command file)
+#>00000000          F_xROM_to_xRAM (linker command file)
+#>00000001          F_pROM_to_xRAM (linker command file)
+#>00000000          F_pROM_to_pRAM (linker command file)
+#>0000000C          F_start_bss (linker command file)
+#>0000001E          F_end_bss (linker command file)
+#>00000320          __DATA_END (linker command file)
+
+
+# Memory map:
+  v_addr   p_addr   size     name
+  0000F000 0000F000 00000000            .x_Peripherals
+  00000000 00000000 00000004 .interrupt_vectorsboot .p_Interruptsboot
+  00000000 00000000 00000066 .interrupt_vectors .p_Interrupts
+  00000066 00000066 00000644 .ApplicationCode .p_Code
+  00000001 00000001 0000031F .ApplicationData .x_Data
+  000006AA 00000001 00000009 .data_in_p_flash_ROM .p_flash_ROM_data
+  00008000 00008000 00000400            .p_internal_RAM
+
+# Link start time: Thu Aug 21 16:16:51 2014
+# Link end time: Thu Aug 21 16:16:52 2014

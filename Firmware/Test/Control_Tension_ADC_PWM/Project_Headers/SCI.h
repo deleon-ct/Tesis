@@ -9,7 +9,8 @@
 #define SCI_H_
 
 #include "Cpu.h"
-#include "Global.h"
+
+#define CANTRXOK 3
 
 //Variables externas
 extern byte arrRx[CANTRXOK];

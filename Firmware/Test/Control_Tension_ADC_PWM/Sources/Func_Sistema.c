@@ -10,12 +10,20 @@
 #include "Cpu.h"
 #include "Events.h"
 #include "Global.h"
+#include "Func_Sistema.h"
 #include "Leds.h"
 
+/* Macros */
+#define AUMENTAR_DUTY	1
+#define DISMINUIR_DUTY	2
+#define CHANNEL_PWM_0	0
+
 /* Prototipos de funciones internas al módulo */
-void ActivarPeriféricos(void);
+void Alcanzando_Tension(void);
 void DesactivarPerifericos(void);
 void Inicializacion_Perifericos(void);
+void Activar_TimeOut(void);
+void Cambiar_PMW(UInt16 valor_PWM);
 
 /*
 ** ===================================================================
@@ -32,13 +40,14 @@ void Inicializacion_Perifericos(void);
 **         None
 ** ===================================================================
 */
-
-void Activar_Salida(uint16_t realizarAccion)
+void Activar_Salida(UInt16 realizarAccion)
 {
 	if(realizarAccion == CAMBIANDO_PWM)
 	{
-		Led_Estado(CAMBIANDO_PWM);
-		ActivarPerifericos();
+		Led_Estado(CAMBIANDO_PWM);		
+		Inicializacion_Perifericos();
+		Activar_TimeOut();
+		Alcanzando_Tension();
 	}
 	else if(realizarAccion == ESPERANDO)
 	{
@@ -51,34 +60,31 @@ void Activar_Salida(uint16_t realizarAccion)
 
 /*
 ** ===================================================================
-**     Method      :  void ActivarPeriféricos(void)
+**     Method      :  void Alcanzando_Tension(void)
 **     Description:
 **         Inicializamos los periféricos y nos quedamos en un buble infinito
 **         esperando que se alcance la tensión requerida. Si la misma no se 
 **         alcanza en 8 segundos se deshabilitan todos los periféricos y se 
-**         enciende el LED_ERROR.  
+**         enciende el LED_ERROR. Queda encendido durante la etapa de debuggeo 
+**         y lo vamos a tratar más adelante.  
 **     Parameters  : None
 **     Returns     :
 **         None
 ** ===================================================================
 */
-void ActivarPeriféricos(void)
-{
-	Inicializacion_Perifericos();
-	
-	Activar_TimeOut();
-	
+void Alcanzando_Tension(void)
+{	
 	do{
 		if (valor_ADC < valorTension)
 		{
 			Cambiar_PMW(AUMENTAR_DUTY);
 			LED_TENSION_OK_Off();
 			Led_Estado(CAMBIANDO_PWM);
-		}
+		}		
 		
 		else if (valor_ADC > valorTension)
 		{
-			Cambiar_PWM(DISMINUIR_DUTY);
+			Cambiar_PMW(DISMINUIR_DUTY);
 			LED_TENSION_OK_Off();
 			Led_Estado(CAMBIANDO_PWM);
 		}
@@ -90,14 +96,20 @@ void ActivarPeriféricos(void)
 			LED_TENSION_OK_On();
 		}
 		
-	}while((tensiónAlcanzada != PROC_OK) || (timeOut));
+	}while((tensionAlcanzada != PROC_OK) || (!timeOut_reach));
 	
-	if (timeOut)
+	if (timeOut_reach)
+	{
 		LED_ERROR_On();
+		DesactivarPerifericos();
+		timeOut_reach = FALSE;
+	}
 	if(tensionAlcanzada == PROC_OK)
-		modificarSalida = 2;		
+	{		
+		modificarSalida = 2;
+		timeOut_Start = FALSE;
+	}
 }
-
 
 /*
 ** ===================================================================
@@ -114,14 +126,10 @@ void ActivarPeriféricos(void)
 */
 void DesactivarPerifericos(void)
 {
-	while(!Esperar_20Segundos){}
-	LED_TENSION_OK_Off();
-	
-	Desactivar_PWM();
-	Desactivar_PDB();
-	Desactivar_ADC();
-	
-	led_Estado(ESPERANDO);
+	clrRegBit(PDB_SCR, ENA);
+	PWMC1_Disable();
+	setReg(ADC0_ADCSC1A, 0x05);		
+	clrRegBit(ADC0_ADCSC2, ADTRG);
 }
 
 /*
@@ -140,9 +148,53 @@ void Inicializacion_Perifericos(void)
 	//setRegBits(GPIO_A_PER, (GPIO_A_PER_PE3_MASK | GPIO_A_PER_PE4_MASK | GPIO_A_PER_PE5_MASK));      //Control Puerto A Periféricos
 	//clrRegBits(GPIO_A_PUR, (GPIO_A_PUR_PU3_MASK | GPIO_A_PUR_PU4_MASK | GPIO_A_PUR_PU5_MASK));		//Deshabilitamos pull-up	
 	
-	setReg(ADC0_ADCSC1A, 0x45);		//Habiitamos interrupción del ADC y canal AD5
+	setReg(ADC0_ADCSC1A, 0x45);		//Habilitamos interrupción del ADC y canal AD5
 	setRegBit(ADC0_ADCSC2, ADTRG);
 	setRegBits(SCI_CTRL1, (SCI_CTRL1_RE_MASK | SCI_CTRL1_REIE_MASK | SCI_CTRL1_RFIE_MASK));	
 	PWMC1_Enable();
 	setRegBit(PDB_SCR, ENA);
+}
+
+/*
+** ===================================================================
+**     Method      :  void Activar_TimeOut(void)
+**     Description :
+**         Activa un timeout de 10 segundos que es el tiempo máximo que tenemos 
+**         para alcanzar el nivel de tensión deseado 
+**     Parameters  : None
+**     Returns     :
+					 None	
+** ===================================================================
+*/
+void Activar_TimeOut(void)
+{
+	timeOut_Start = TRUE;
+}
+
+/*
+** ===================================================================
+**     Method      :  void Cambiar_PMW(uint16_t valor_PWM)
+**     Description :
+**         Modifica el valor del ciclo del PWM. 
+**     Parameters  : AUMENTAR_DUTY
+**     				 DISMINUIR_DUTY	
+**     Returns     :
+					 None	
+** ===================================================================
+*/
+void Cambiar_PMW(UInt16 cambiar_PWM)
+{
+	static int valor_PWM;
+	
+	if(cambiar_PWM == AUMENTAR_DUTY)
+	{
+		valor_PWM++;
+		PWMC1_SetDuty(CHANNEL_PWM_0, valor_PWM);
+	}
+	else if(cambiar_PWM == DISMINUIR_DUTY)
+	{
+		valor_PWM--;
+		PWMC1_SetDuty(CHANNEL_PWM_0, valor_PWM);
+	}
+	PWMC1_Load();
 }

@@ -56,37 +56,50 @@ void TI1_OnInterrupt(void)
   /* Write your code here ... */
 
 	static uint16_t contador;
-	
+	static uint16_t contador_timeOut;
 	/*Este contador se usa para contabilizar los 20 segundos que el PWM mantiene
 	 * la tension a la salida fija en el valor deseado */
-	static uint16_t ventana_tension;	
-			
+	static uint16_t ventana_tension;
+	 			
 	switch(ledEstado)
 	{
 		case ESPERANDO:
 		{
 			contador++;
+			ventana_tension = 0;
+			contador_timeOut = 0;
 			if (contador == 10)
 			{
 				LED_ESTADO_Toggle();
-				contador = 0;
-				ventana_tension = 0;
+				contador = 0;				
 			}
 		}
 		case CAMBIANDO_PWM:
 		{
-			contador++;
+			contador++;			
 			if (contador == 1)
 			{
 				LED_ESTADO_Toggle();
 				contador = 0;
 				ventana_tension = 0;
 			}
+			/* Controla que este habilitado el timeOut y espera 10 segundos 
+			 * sino error de timeout */
+			if (timeOut_Start)
+			{
+				contador_timeOut++;
+				if(contador_timeOut == 50)
+				{
+					timeOut_reach = TRUE;
+					contador_timeOut = 0;
+				}
+			}
 		}
 		case TENSION_FIJA:
 		{
 			contador++;
 			ventana_tension++;
+			contador_timeOut = 0;
 			
 			if (contador == 5)
 			{
@@ -97,13 +110,12 @@ void TI1_OnInterrupt(void)
 			{
 				/* El entero 12 da el OK para que salga del while en la función
 				 * ActivarPerifericos() del módulo Func_Sistema.c */
-				tensionAlcanzada = PROC_OK;				
+				tensionAlcanzada = PROC_OK;
+				ventana_tension = 0;
 			}
 		}
-		default:
-			nop;
-	}
-			
+		default:{}		
+	};			
 }
 
 /*
