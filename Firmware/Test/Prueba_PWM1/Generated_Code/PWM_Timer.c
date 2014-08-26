@@ -6,7 +6,7 @@
 **     Component   : Init_PWM
 **     Version     : Component 01.295, Driver 01.23, CPU db: 3.00.209
 **     Compiler    : CodeWarrior DSP C Compiler
-**     Date/Time   : 2014-08-25, 12:06, # CodeGen: 10
+**     Date/Time   : 2014-08-26, 08:51, # CodeGen: 11
 **     Abstract    :
 **         This "Init_PWM" Peripheral Inspector implements the
 **         Puls Width Modulator module (PWM), basic initialization
@@ -16,7 +16,7 @@
 **
 **         Clock setting
 **             PWM prescaler           : 1
-**             Counter modulo          : 640
+**             Counter modulo          : 960
 **             Dead time value         : 0
 **             Reload frequency        : 1
 **             PWM frequency           : 50 kHz
@@ -40,7 +40,7 @@
 **             Internal current ctrl.2 : Top
 **
 **         Channel settings
-**             Alignment               : Edge-aligned mode
+**             Alignment               : Center-aligned mode
 **             Channels 0-1
 **               Mode of PWM           : Independent
 **               Phase shift PWM.      : Disabled
@@ -168,8 +168,8 @@ void PWM_Timer_Init(void)
   setReg16(PWM_CTRL, 0x00U);            
   /* PWM_FCTRL: ??=0,??=0,??=0,??=0,FPOL3=0,FPOL2=0,FPOL1=0,FPOL0=0,FIE3=0,FMODE3=0,FIE2=0,FMODE2=0,FIE1=0,FMODE1=0,FIE0=0,FMODE0=0 */
   setReg16(PWM_FCTRL, 0x00U);           
-  /* PWM_CMOD: ??=0,PWMCM=0x0280 */
-  setReg16(PWM_CMOD, 0x0280U);          
+  /* PWM_CMOD: ??=0,PWMCM=0x03C0 */
+  setReg16(PWM_CMOD, 0x03C0U);          
   /* PWM_VAL0: PMVAL=0xA0 */
   setReg16(PWM_VAL0, 0xA0U);            
   /* PWM_VAL1: PMVAL=0 */
@@ -208,8 +208,8 @@ void PWM_Timer_Init(void)
   setReg16(PWM_FFILT2, 0x00U);          
   /* PWM_FFILT3: GSTR3=0,??=0,??=0,??=0,??=0,FILT3_CNT=0,FILT3_PER=0 */
   setReg16(PWM_FFILT3, 0x00U);          
-  /* PWM_CNFG: ??=0,DBG_EN=1,WAIT_EN=0,EDG=1,??=0,TOPNEG45=0,TOPNEG23=0,TOPNEG01=0,??=0,BOTNEG45=0,BOTNEG23=0,BOTNEG01=0,INDEP45=1,INDEP23=1,INDEP01=1,WP=0 */
-  setReg16(PWM_CNFG, 0x500EU);          
+  /* PWM_CNFG: ??=0,DBG_EN=1,WAIT_EN=0,EDG=0,??=0,TOPNEG45=0,TOPNEG23=0,TOPNEG01=0,??=0,BOTNEG45=0,BOTNEG23=0,BOTNEG01=0,INDEP45=1,INDEP23=1,INDEP01=1,WP=0 */
+  setReg16(PWM_CNFG, 0x400EU);          
   /* PWM_FLTACK: FPIN3=0,FFLAG3=0,FPIN2=0,FFLAG2=0,FPIN1=0,FFLAG1=0,FPIN0=0,FFLAG0=0,??=0,FTACK3=1,??=0,FTACK2=1,??=0,FTACK1=1,??=0,FTACK0=1 */
   setReg16(PWM_FLTACK, 0x55U);         /* clear fault flags */ 
   /* PWM_FCTRL: ??=0,??=0,??=0,??=0,FPOL3=0,FPOL2=0,FPOL1=0,FPOL0=0,FIE3=0,FMODE3=0,FIE2=0,FMODE2=0,FIE1=0,FMODE1=0,FIE0=0,FMODE0=0 */

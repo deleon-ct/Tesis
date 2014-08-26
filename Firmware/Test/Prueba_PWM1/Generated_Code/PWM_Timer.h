@@ -6,7 +6,7 @@
 **     Component   : Init_PWM
 **     Version     : Component 01.295, Driver 01.23, CPU db: 3.00.209
 **     Compiler    : CodeWarrior DSP C Compiler
-**     Date/Time   : 2014-08-25, 11:25, # CodeGen: 7
+**     Date/Time   : 2014-08-26, 08:51, # CodeGen: 11
 **     Abstract    :
 **         This "Init_PWM" Peripheral Inspector implements the
 **         Puls Width Modulator module (PWM), basic initialization
@@ -16,7 +16,7 @@
 **
 **         Clock setting
 **             PWM prescaler           : 1
-**             Counter modulo          : 640
+**             Counter modulo          : 960
 **             Dead time value         : 0
 **             Reload frequency        : 1
 **             PWM frequency           : 50 kHz
@@ -40,7 +40,7 @@
 **             Internal current ctrl.2 : Top
 **
 **         Channel settings
-**             Alignment               : Edge-aligned mode
+**             Alignment               : Center-aligned mode
 **             Channels 0-1
 **               Mode of PWM           : Independent
 **               Phase shift PWM.      : Disabled

@@ -76,7 +76,7 @@
         </group>
         <group name="Peripheral clock rates">
           <TMR_clock_rate v="Auto select" />
-          <PWM_clock_rate v="Auto select" />
+          <PWM_clock_rate v="PWM_3x_System_clock" />
           <SCI_clock_rate v="Auto select" />
         </group>
         <group name="I/O module">
@@ -402,15 +402,15 @@ autoselected pull
       <group name="Settings">
         <group name="Clock setting">
           <PWM_Prescaler v="1" />
-          <Counter_modulo v="640" />
+          <Counter_modulo v="960" />
           <Dead_time_value v="0" />
           <Dead_time_value_1 v="0" />
-          <Alignment v="Edge-aligned mode" />
+          <Alignment v="Center-aligned mode" />
           <Reload_frequency v="1" />
           <PWM_pair_0_source v="PWM" />
           <PWM_pair_1_source v="PWM" />
           <PWM_pair_2_source v="PWM" />
-          <PWM_clock_rate v="Auto select" />
+          <PWM_clock_rate v="PWM_3x_System_clock" />
           <PWM_frequency v="50 kHz" />
           <PWM_period v="20 us" />
           <PWM_dead_time v="0 us" />

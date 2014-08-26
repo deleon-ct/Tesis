@@ -6,7 +6,7 @@
 **     Component   : DSC_LED
 **     Version     : Component 01.000, Driver 01.06, CPU db: 3.00.209
 **     Compiler    : CodeWarrior DSP C Compiler
-**     Date/Time   : 2014-08-25, 11:25, # CodeGen: 8
+**     Date/Time   : 2014-08-26, 08:51, # CodeGen: 11
 **     Abstract    :
 **          This bean provide methods for driving of LED device.
 **          Methods On, Off, Set and Toggle (or only initialization code)

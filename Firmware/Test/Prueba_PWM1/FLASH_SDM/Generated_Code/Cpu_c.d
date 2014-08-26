@@ -1,6 +1,6 @@
-Generated_Code/Cpu_c.obj: D:\Ani\Ani\Tesis\Firmware\Test\Prueba_PWM1\Generated_Code\Cpu.c \
-	D:\Ani\Ani\Tesis\Firmware\Test\Prueba_PWM1\Generated_Code\BTN1.h \
-	D:\Ani\Ani\Tesis\Firmware\Test\Prueba_PWM1\Generated_Code\PE_Types.h \
+Generated_Code/Cpu_c.obj: D:\CW_Workspace\Wks2\Prueba_PWM1\Generated_Code\Cpu.c \
+	D:\CW_Workspace\Wks2\Prueba_PWM1\Generated_Code\BTN1.h \
+	D:\CW_Workspace\Wks2\Prueba_PWM1\Generated_Code\PE_Types.h \
 	D:\Freescale\CW\ MCU\ v10.6\MCU\M56800E\ Support\msl\MSL_C\MSL_Common\Include\stdint.h \
 	D:\Freescale\CW\ MCU\ v10.6\MCU\M56800E\ Support\msl\MSL_C\MSL_Common\Include\ansi_parms.h \
 	D:\Freescale\CW\ MCU\ v10.6\MCU\M56800E\ Support\msl\MSL_C\MSL_Common\Include\msl_c_version.h \
@@ -10,13 +10,13 @@ Generated_Code/Cpu_c.obj: D:\Ani\Ani\Tesis\Firmware\Test\Prueba_PWM1\Generated_C
 	D:\Freescale\CW\ MCU\ v10.6\MCU\M56800E\ Support\msl\MSL_C\MSL_Common\Include\cstdint \
 	D:\Freescale\CW\ MCU\ v10.6\MCU\M56800E\ Support\msl\MSL_C\MSL_Common\Include\limits_api.h \
 	D:\Freescale\CW\ MCU\ v10.6\MCU\M56800E\ Support\msl\MSL_C\MSL_Common\Include\msl_lib_ext1.h \
-	D:\Ani\Ani\Tesis\Firmware\Test\Prueba_PWM1\Generated_Code\PE_Error.h \
-	D:\Ani\Ani\Tesis\Firmware\Test\Prueba_PWM1\Generated_Code\PE_Const.h \
-	D:\Ani\Ani\Tesis\Firmware\Test\Prueba_PWM1\Generated_Code\IO_Map.h \
-	D:\Ani\Ani\Tesis\Firmware\Test\Prueba_PWM1\Generated_Code\Inhr1.h \
-	D:\Ani\Ani\Tesis\Firmware\Test\Prueba_PWM1\Generated_Code\Cpu.h \
-	D:\Ani\Ani\Tesis\Firmware\Test\Prueba_PWM1\Generated_Code\assert.h \
-	D:\Ani\Ani\Tesis\Firmware\Test\Prueba_PWM1\Generated_Code\PWM_Timer.h \
-	D:\Ani\Ani\Tesis\Firmware\Test\Prueba_PWM1\Generated_Code\LED1.h \
-	D:\Ani\Ani\Tesis\Firmware\Test\Prueba_PWM1\Generated_Code\Inhr2.h \
-	D:\Ani\Ani\Tesis\Firmware\Test\Prueba_PWM1\Sources\Events.h 
+	D:\CW_Workspace\Wks2\Prueba_PWM1\Generated_Code\PE_Error.h \
+	D:\CW_Workspace\Wks2\Prueba_PWM1\Generated_Code\PE_Const.h \
+	D:\CW_Workspace\Wks2\Prueba_PWM1\Generated_Code\IO_Map.h \
+	D:\CW_Workspace\Wks2\Prueba_PWM1\Generated_Code\Inhr1.h \
+	D:\CW_Workspace\Wks2\Prueba_PWM1\Generated_Code\Cpu.h \
+	D:\CW_Workspace\Wks2\Prueba_PWM1\Generated_Code\assert.h \
+	D:\CW_Workspace\Wks2\Prueba_PWM1\Generated_Code\PWM_Timer.h \
+	D:\CW_Workspace\Wks2\Prueba_PWM1\Generated_Code\LED1.h \
+	D:\CW_Workspace\Wks2\Prueba_PWM1\Generated_Code\Inhr2.h \
+	D:\CW_Workspace\Wks2\Prueba_PWM1\Sources\Events.h 

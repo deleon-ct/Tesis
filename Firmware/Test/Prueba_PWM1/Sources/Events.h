@@ -40,14 +40,25 @@
 #include "LED1.h"
 #include "Inhr2.h"
 
+/* DEFINEs para edge align y System Clock de 32MHZ */
+///* 2uS */
+//#define CICLO10		((word)64)
+///* 5uS */
+//#define CICLO25		((word)160)
+///* 10uS */
+//#define CICLO50		((word)320)
+///* 18uS */
+//#define CICLO90		((word)576)
+
+/* DEFINEs para center align y System Clock de 96MHZ (¡multiplicado por 2!) */
 /* 2uS */
-#define CICLO10		((word)64)
+#define CICLO10		((word)96)
 /* 5uS */
-#define CICLO25		((word)160)
+#define CICLO25		((word)240)
 /* 10uS */
-#define CICLO50		((word)320)
+#define CICLO50		((word)480)
 /* 18uS */
-#define CICLO90		((word)576)
+#define CICLO90		((word)864)
 
 
 void BTN1_OnButton(void);

@@ -570,11 +570,11 @@ autoselected pull
         </group>
       </group>
       <group name="Registers">
-        <PWM_value_register_0 v="1" />
+        <PWM_value_register_0 v="160" />
         <PWM_value_register_1 v="0" />
         <PWM_value_register_2 v="0" />
-        <PWM_value_register_3 v="0" />
-        <PWM_value_register_4 v="1" />
+        <PWM_value_register_3 v="160" />
+        <PWM_value_register_4 v="0" />
         <PWM_value_register_5 v="0" />
       </group>
       <group name="Initialization">
@@ -644,76 +644,6 @@ autoselected pull
       <Set v="don&amp;apos;t generate code" />
       <Status v="don&amp;apos;t generate code" />
       <ConnectPin v="don&amp;apos;t generate code" />
-    </Methods>
-    <Events>
-      <EmptySection_DummyValue />
-    </Events>
-  </Bean>
-  <Bean name="PMW0_A0" type="BitIO">
-    <Enabled v="Y" />
-    <Properties>
-      <Component_name v="PMW0_A0" />
-      <Pin_for_I_O v="GPIOA0_PWM0" />
-      <Pull_resistor v="no pull resistor" />
-      <Open_drain v="push-pull" />
-      <Drive_strength_for_GPIOA0 v="Low" />
-      <Input_filter_for_GPIOA0 v="Disabled" />
-      <Slew_rate_for_GPIOA0 v="Fast" />
-      <Direction v="Input/Output" />
-      <group name="Initialization">
-        <Init__direction v="Output" />
-        <Init__value v="0" />
-      </group>
-      <Safe_mode v="yes" />
-      <Optimization_for v="speed" />
-    </Properties>
-    <Methods>
-      <GetDir v="don&amp;apos;t generate code" />
-      <SetDir v="generate code" />
-      <SetInput v="don&amp;apos;t generate code" />
-      <SetOutput v="don&amp;apos;t generate code" />
-      <GetVal v="generate code" />
-      <PutVal v="generate code" />
-      <ClrVal v="generate code" />
-      <SetVal v="generate code" />
-      <NegVal v="don&amp;apos;t generate code" />
-      <ConnectPin v="don&amp;apos;t generate code" />
-      <GetRawVal v="don&amp;apos;t generate code" />
-    </Methods>
-    <Events>
-      <EmptySection_DummyValue />
-    </Events>
-  </Bean>
-  <Bean name="PWM4_A4" type="BitIO">
-    <Enabled v="Y" />
-    <Properties>
-      <Component_name v="PWM4_A4" />
-      <Pin_for_I_O v="GPIOA3_PWM3_TXD_EXTAL" />
-      <Pull_resistor v="no pull resistor" />
-      <Open_drain v="push-pull" />
-      <Drive_strength_for_GPIOA3 v="Low" />
-      <Input_filter_for_GPIOA3 v="Disabled" />
-      <Slew_rate_for_GPIOA3 v="Fast" />
-      <Direction v="Input/Output" />
-      <group name="Initialization">
-        <Init__direction v="Output" />
-        <Init__value v="0" />
-      </group>
-      <Safe_mode v="yes" />
-      <Optimization_for v="speed" />
-    </Properties>
-    <Methods>
-      <GetDir v="don&amp;apos;t generate code" />
-      <SetDir v="generate code" />
-      <SetInput v="don&amp;apos;t generate code" />
-      <SetOutput v="don&amp;apos;t generate code" />
-      <GetVal v="generate code" />
-      <PutVal v="generate code" />
-      <ClrVal v="generate code" />
-      <SetVal v="generate code" />
-      <NegVal v="don&amp;apos;t generate code" />
-      <ConnectPin v="don&amp;apos;t generate code" />
-      <GetRawVal v="don&amp;apos;t generate code" />
     </Methods>
     <Events>
       <EmptySection_DummyValue />

@@ -7,7 +7,7 @@
 **     Version     : Component 01.020, Driver 02.10, CPU db: 3.00.209
 **     Datasheet   : MC56F8006RM Rev. 0 03/2009, MC56F8006 Rev. 2 03/2009
 **     Compiler    : CodeWarrior DSP C Compiler
-**     Date/Time   : 2014-08-25, 12:06, # CodeGen: 10
+**     Date/Time   : 2014-08-26, 08:51, # CodeGen: 11
 **     Abstract    :
 **
 **     Settings    :
@@ -255,8 +255,8 @@ void PE_low_level_init(void)
   setReg16(GPIO_E_SLEW, 0xFFU);        /* Set the input filter on GPIOE pins according to the CPU bean settings */ 
   /* GPIO_F_SLEW: ??=0,??=0,??=0,??=0,??=0,??=0,??=0,??=0,??=0,??=0,??=0,??=0,SLEW3=1,SLEW2=1,SLEW1=1,SLEW0=1 */
   setReg16(GPIO_F_SLEW, 0x0FU);        /* Set the input filter on GPIOF pins according to the CPU bean settings */ 
-  /* SIM_PCR: TMR_CR=0,??=0,PWM_CR=0,SCI_CR=0,??=0,??=0,??=0,??=0,??=0,??=0,??=0,??=0,??=0,??=0,??=0,??=0 */
-  setReg16(SIM_PCR, 0x00U);            /* Set the TMR; PWM; SCI module clock rates */ 
+  /* SIM_PCR: TMR_CR=0,??=0,PWM_CR=1,SCI_CR=0,??=0,??=0,??=0,??=0,??=0,??=0,??=0,??=0,??=0,??=0,??=0,??=0 */
+  setReg16(SIM_PCR, 0x2000U);          /* Set the TMR; PWM; SCI module clock rates */ 
   /* SIM_PCE: CMP2=0,CMP1=0,CMP0=0,ADC1=0,ADC0=0,PGA1=0,PGA0=0,I2C=0,SCI=0,SPI=0,PWM=1,COP=0,PDB=0,PIT=0,TA1=0,TA0=0 */
   setReg16(SIM_PCE, 0x20U);            /* Set up the peripheral clock enable register */ 
   /* SIM_SDR: CMP2=0,CMP1=0,CMP0=0,ADC1=0,ADC0=0,PGA1=0,PGA0=0,I2C=0,SCI=0,SPI=0,PWM=0,COP=0,PDB=0,PIT=0,TA1=0,TA0=0 */
@@ -293,10 +293,6 @@ void PE_low_level_init(void)
   /* ### Button "BTN1" init code ... */
   BTN1_Init();
   /* ### Init_PWM "PWM_Timer" init code ... */
-  
-  /* Sacamos el pull up para el PWM */
-  //clrReg16Bits(GPIO_A_PUR, 0x09U);
-  
   PWM_Timer_Init();
   /* Common peripheral initialization - ENABLE */
   /* GPIO_B_IESR: IES3=1 */
