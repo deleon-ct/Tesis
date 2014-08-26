@@ -1,0 +1,26 @@
+/*
+ * SCI.h
+ *
+ *  Created on: Aug 8, 2014
+ *      Author: DeLeon
+ */
+
+#ifndef SCI_H_
+#define SCI_H_
+
+#include "Cpu.h"
+
+#define CANTRXOK 3
+
+//Variables externas
+extern byte arrRx[CANTRXOK];
+extern byte SCI_Saludo_PWM;
+
+//Prototipos de funciones
+
+void Arranque_Seguro_SCI(void);
+void Saludo_Inicial_SCI(void);
+void Agregar_Espacios_SCI(byte espacios);
+void Enviar_Chr(byte Chrs);
+
+#endif /* SCI_H_ */

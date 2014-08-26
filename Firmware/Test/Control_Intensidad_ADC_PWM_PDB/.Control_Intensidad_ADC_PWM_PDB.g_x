@@ -1,0 +1,54 @@
+<CodeGenerationInfo>
+  <ToolchainSettings>
+    <option>
+      <name>PE_G_4PEx_ToolChain_Compiler_SearchUserPaths</name>
+      <values lines_count="2">
+        <Line>"${ProjDirPath}/Sources"</Line>
+        <Line>"${ProjDirPath}/Generated_Code"</Line>
+      </values>
+    </option>
+  </ToolchainSettings>
+  <GeneratedFilesList>
+    <GeneratedByPE>
+      <File Name="Generated_Code/Inhr1.h" FileDate="2014-08-21, 17:10:03" FileAge="1408651803741" FileType="45637" CompNumb="17" />
+      <File Name="Generated_Code/Inhr1.c" FileDate="2014-08-21, 17:10:03" FileAge="1408651803738" FileType="45637" CompNumb="17" />
+      <File Name="Documentation/doxygen/pex.doxyfile" FileDate="2014-08-21, 17:10:03" FileAge="1408651803673" FileType="45637" CompNumb="2" />
+      <File Name="Generated_Code/PWMC1.h" FileDate="2014-08-26, 12:03:54" FileAge="1409065434587" FileType="45637" CompNumb="9" />
+      <File Name="Documentation/doxygen/RoutingReport.txt" FileDate="2014-08-20, 12:11:15" FileAge="1408547475182" FileType="45637" CompNumb="2" />
+      <File Name="Generated_Code/Cpu.h" FileDate="2014-08-21, 17:10:03" FileAge="1408651803691" FileType="45637" CompNumb="2" />
+      <File Name="Generated_Code/PWMC1.c" FileDate="2014-08-26, 12:03:54" FileAge="1409065434662" FileType="45637" CompNumb="9" />
+      <File Name="Documentation/Control_Intensidad_ADC_PWM_PDB_SIGNALS.txt" FileDate="2014-08-26, 12:46:43" FileAge="1409068003764" FileType="3072" />
+      <File Name="Generated_Code/assert.h" FileDate="2014-08-21, 17:10:03" FileAge="1408651803774" FileType="45637" />
+      <File Name="Generated_Code/Vectors.c" FileDate="2014-08-25, 17:17:42" FileAge="1408997862415" FileType="45637" CompNumb="2" />
+      <File Name="Generated_Code/Cpu.c" FileDate="2014-08-26, 12:03:54" FileAge="1409065434674" FileType="45637" CompNumb="2" />
+      <File Name="Generated_Code/PE_Const.h" FileDate="2014-08-21, 17:10:03" FileAge="1408651803699" FileType="45637" />
+      <File Name="Generated_Code/ADC0.h" FileDate="2014-08-26, 12:03:54" FileAge="1409065434628" FileType="45637" CompNumb="6" />
+      <File Name="Generated_Code/PE_Types.h" FileDate="2014-08-21, 17:10:03" FileAge="1408651803705" FileType="45637" />
+      <File Name="Generated_Code/PE_Error.h" FileDate="2014-08-21, 17:10:03" FileAge="1408651803702" FileType="45637" />
+      <File Name="Documentation/Control_Intensidad_ADC_PWM_PDB_Settings.xml" FileDate="2014-08-26, 12:03:54" FileAge="1409065434816" FileType="3072" />
+      <File Name="Generated_Code/ADC0.c" FileDate="2014-08-26, 12:03:54" FileAge="1409065434653" FileType="45637" CompNumb="6" />
+      <File Name="Sources/Events.h" FileDate="2014-08-25, 17:17:42" FileAge="1408997862422" FileType="131328" />
+      <File Name="Documentation/doxygen/Control_Intensidad_ADC_PWM_PDB.txt" FileDate="2014-08-21, 17:10:03" FileAge="1408651803676" FileType="45637" CompNumb="2" />
+      <File Name="Sources/Events.c" FileDate="2014-08-25, 16:40:29" FileAge="1408995629028" FileType="131328" />
+      <File Name="Generated_Code/TI1.h" FileDate="2014-08-21, 17:26:29" FileAge="1408652789966" FileType="45637" CompNumb="15" />
+      <File Name="Project_Settings/Linker_Files/FLASH_SDM.cmd" FileDate="2014-08-21, 17:10:03" FileAge="1408651803684" FileType="8" CompNumb="2" />
+      <File Name="Generated_Code/TI1.c" FileDate="2014-08-21, 17:26:30" FileAge="1408652790004" FileType="45637" CompNumb="15" />
+      <File Name="Documentation/doxygen/pex.css" FileDate="2014-08-20, 12:11:14" FileAge="1408547474912" FileType="16384" CompNumb="2" />
+      <File Name="Project_Settings/Startup_Code/56F80xx_init.asm" FileDate="2014-08-20, 12:11:15" FileAge="1408547475092" FileType="16384" CompNumb="2" />
+      <File Name="Sources/main.c" FileDate="2014-08-26, 12:44:48" FileAge="1409067888232" FileType="128" />
+      <File Name="Documentation/Control_Intensidad_ADC_PWM_PDB.txt" FileDate="2014-08-25, 17:17:42" FileAge="1408997862498" FileType="3072" />
+      <File Name="Generated_Code/LED_ESTADO.h" FileDate="2014-08-21, 17:10:03" FileAge="1408651803735" FileType="45637" CompNumb="16" />
+      <File Name="Generated_Code/LED_PWM_OVERFLOW.h" FileDate="2014-08-25, 17:17:42" FileAge="1408997862350" FileType="45637" CompNumb="33" />
+      <File Name="Generated_Code/IO_Map.h" FileDate="2014-08-21, 17:10:03" FileAge="1408651803696" FileType="45637" />
+      <File Name="Generated_Code/LED_ESTADO.c" FileDate="2014-08-21, 17:10:03" FileAge="1408651803732" FileType="45637" CompNumb="16" />
+      <File Name="Generated_Code/AS1.h" FileDate="2014-08-21, 17:10:03" FileAge="1408651803753" FileType="45637" CompNumb="22" />
+      <File Name="Generated_Code/LED_PWM_OVERFLOW.c" FileDate="2014-08-25, 17:17:42" FileAge="1408997862346" FileType="45637" CompNumb="33" />
+      <File Name="Generated_Code/Inhr2.h" FileDate="2014-08-25, 17:17:42" FileAge="1408997862369" FileType="45637" CompNumb="34" />
+      <File Name="Generated_Code/AS1.c" FileDate="2014-08-26, 12:46:43" FileAge="1409068003736" FileType="45637" CompNumb="22" />
+      <File Name="Generated_Code/PDB.h" FileDate="2014-08-21, 17:10:03" FileAge="1408651803764" FileType="45637" CompNumb="7" />
+      <File Name="Generated_Code/Inhr2.c" FileDate="2014-08-25, 17:17:42" FileAge="1408997862354" FileType="45637" CompNumb="34" />
+      <File Name="Generated_Code/PDB.c" FileDate="2014-08-21, 17:10:03" FileAge="1408651803762" FileType="45637" CompNumb="7" />
+    </GeneratedByPE>
+  </GeneratedFilesList>
+  <CodeGenReference>18</CodeGenReference>
+</CodeGenerationInfo>
