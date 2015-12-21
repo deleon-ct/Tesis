@@ -1,0 +1,32 @@
+"./Generated_Code/btnSending_c.obj"
+"./Generated_Code/Vectors_c.obj"
+"./Generated_Code/TI1_c.obj"
+"./Generated_Code/RTS_Signal_c.obj"
+"./Generated_Code/LED_PC_c.obj"
+"./Generated_Code/LED_CLIENTE_c.obj"
+"./Generated_Code/LED_Act_c.obj"
+"./Generated_Code/LED4_c.obj"
+"./Generated_Code/LED3_c.obj"
+"./Generated_Code/LED2_c.obj"
+"./Generated_Code/Inhr7_c.obj"
+"./Generated_Code/Inhr6_c.obj"
+"./Generated_Code/Inhr5_c.obj"
+"./Generated_Code/Inhr4_c.obj"
+"./Generated_Code/Inhr3_c.obj"
+"./Generated_Code/Inhr2_c.obj"
+"./Generated_Code/Inhr1_c.obj"
+"./Generated_Code/Cpu_c.obj"
+"./Generated_Code/AS1_c.obj"
+"./Project_Settings/Startup_Code/56F80xx_init_asm.obj"
+"./Sources/main_c.obj"
+"./Sources/Funciones_c.obj"
+"./Sources/Events_c.obj"
+-msgstyle parseable
+-g
+-nostdlib
+"$(ProjDirPath)/Project_Settings/Linker_Files/FLASH_SDM.cmd"
+-main F_EntryPoint
+-L"$(MCUToolsBaseDirEnv)/M56800E Support/msl/MSL_C/DSP_56800E/lib"
+-map 
+-l${VALUE}"$(MCUToolsBaseDirEnv)/M56800E Support/runtime_56800E/lib/runtime 56800E smm.lib"
+-l${VALUE}"$(MCUToolsBaseDirEnv)/M56800E Support/msl/MSL_C/DSP_56800E/lib/MSL C 56800E smm.lib"

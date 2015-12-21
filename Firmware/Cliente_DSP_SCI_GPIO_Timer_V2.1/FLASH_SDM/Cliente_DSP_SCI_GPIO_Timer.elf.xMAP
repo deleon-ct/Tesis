@@ -1,0 +1,115 @@
+
+
+
+# .interrupt_vectorsboot
+#>00000000          F_vector_addr (linker command file)
+  00000000 00000004 interrupt_vectorsboot.text F_vectboot	(Vectors_c.obj)
+
+# .interrupt_vectors
+  00000000 00000066 interrupt_vectors.text F_vect	(Vectors_c.obj)
+
+# .ApplicationCode
+#>00000066          F_Pcode_start_addr (linker command file)
+  00000066 00000003 .text   FInhr4_OnInterrupt	(btnSending_c.obj)
+  00000069 00000003 .text   FbtnSending_Init	(btnSending_c.obj)
+  0000006C 00000009 .text   FSetCV	(TI1_c.obj)
+  00000075 00000012 .text   FSetPV	(TI1_c.obj)
+  00000087 00000011 .text   FTI1_Init	(TI1_c.obj)
+  00000098 00000011 .text   FTI1_Interrupt	(TI1_c.obj)
+  000000A9 00000011 .text   FInhr4_Interrupt	(Inhr4_c.obj)
+  000000BA 00000007 .text   FCpu_Interrupt	(Cpu_c.obj)
+  000000C1 00000059 .text   F_EntryPoint	(Cpu_c.obj)
+  0000011A 000000E4 .text   FPE_low_level_init	(Cpu_c.obj)
+  000001FE 0000000A .text   FHWEnDi	(AS1_c.obj)
+  00000208 00000041 .text   FAS1_RecvChar	(AS1_c.obj)
+  00000249 0000005D .text   FAS1_InterruptRx	(AS1_c.obj)
+  000002A6 00000022 .text   FAS1_InterruptTx	(AS1_c.obj)
+  000002C8 0000000F .text   FAS1_Init	(AS1_c.obj)
+  000002D7 00000027 .text   FConfiguracion_Arranque	(main_c.obj)
+  000002FE 000000BD .text   Fmain	(main_c.obj)
+  000003BB 00000066 .text   FTrasmitir_Trama	(Funciones_c.obj)
+  00000421 00000042 .text   FControl_Datos_SCI	(Funciones_c.obj)
+  00000463 00000036 .text   FEnvio_Datos_Clientes	(Funciones_c.obj)
+  00000499 00000009 .text   FBorrar_gProtocolo	(Funciones_c.obj)
+  000004A2 00000048 .text   FTI1_OnInterrupt	(Events_c.obj)
+  000004EA 00000001 .text   FAS1_OnError	(Events_c.obj)
+  000004EB 0000003A .text   FAS1_OnRxChar	(Events_c.obj)
+  00000525 00000001 .text   FAS1_OnTxChar	(Events_c.obj)
+  00000526 0000000C .text   FbtnSending_OnButton	(Events_c.obj)
+  00000532 00000042 rtlib.text rtlib.text	(runtime 56800E smm.lib save_reg.o     )
+  00000532 00000023 rtlib.text INTERRUPT_SAVEALL	(runtime 56800E smm.lib save_reg.o     )
+  00000555 0000001F rtlib.text INTERRUPT_RESTOREALL	(runtime 56800E smm.lib save_reg.o     )
+  00000574 00000045 startup.text Finit_56800_	(56F80xx_init_asm.obj)
+  00000574 00000045 startup.text startup.text	(56F80xx_init_asm.obj)
+#>000005B9          F_Pcode_end_addr (linker command file)
+#>000005BA          __pROM_data_start (linker command file)
+
+# .data_in_p_flash_ROM
+#>00000001          __xRAM_data_start (linker command file)
+  00000001 00000004 .data   FgClientes_ID	(main_c.obj)
+  00000005 00000004 .data   FgClientes_Func	(main_c.obj)
+  00000009 00000004 .data   FgClientes_Func_Off	(main_c.obj)
+#>0000000E          __xRAM_data_end (linker command file)
+#>0000000D          __data_size (linker command file)
+
+# .ApplicationData
+#>00000010          F_Xbss_start_addr (linker command file)
+#>00000010          _START_BSS (linker command file)
+  00000010 00000002 .bss    FCounted	(btnSending_c.obj)
+  00000012 00000001 .bss    FSR_lock	(Cpu_c.obj)
+  00000013 00000001 .bss    FShadow_GPIO_B_DR	(Cpu_c.obj)
+  00000014 00000001 .bss    FSR_reg	(Cpu_c.obj)
+  00000015 00000001 .bss    FBufferRead	(AS1_c.obj)
+  00000016 00000001 .bss    FSerFlag	(AS1_c.obj)
+  00000017 00000001 .bss    FgActivarTX	(main_c.obj)
+  00000017 00000001 .bss    FgWait_For_Tx	(main_c.obj)
+  00000018 00000001 .bss    FgWait_For_Btn	(main_c.obj)
+  00000019 00000001 .bss    FgEstado_FW	(main_c.obj)
+  0000001A 00000001 .bss    FgEstado_Funcion	(main_c.obj)
+  0000001B 00000001 .bss    FgContador_Clientes	(main_c.obj)
+  0000001C 00000001 .bss    FgTiempoRetardo10mS	(main_c.obj)
+  0000001D 00000004 .bss    FgProtocolo	(main_c.obj)
+  00000021 00000002 .bss    F_ZZ17Control_Datos_SCIPjE6dataRX	(Funciones_c.obj)
+  00000023 00000001 .bss    F_ZZ15TI1_OnInterruptvE11cont_LedAct	(Events_c.obj)
+  00000024 00000001 .bss    F_ZZ15TI1_OnInterruptvE7cont_TX_0	(Events_c.obj)
+  00000025 00000001 .bss    F_ZZ15TI1_OnInterruptvE8cont_Btn_1	(Events_c.obj)
+  00000026 00000001 .bss    F_ZZ12AS1_OnRxCharvE1i	(Events_c.obj)
+#>00000028          _END_BSS (linker command file)
+#>00000018          F_Xbss_length (linker command file)
+#>00000028          _HEAP_ADDR (linker command file)
+#>00000100          _HEAP_SIZE (linker command file)
+#>00000128          _HEAP_END (linker command file)
+#>00000200          _min_stack_size (linker command file)
+#>00000128          _stack_addr (linker command file)
+#>00000328          _stack_end (linker command file)
+#>00000028          F_heap_addr (linker command file)
+#>00000128          F_heap_end (linker command file)
+#>00000128          F_Lstack_addr (linker command file)
+#>00000128          F_StackAddr (linker command file)
+#>00000327          F_StackEndAddr (linker command file)
+#>0000000D          F_Ldata_size (linker command file)
+#>00000001          F_Ldata_RAM_addr (linker command file)
+#>000005BA          F_Ldata_ROM_addr (linker command file)
+#>00000000          F_Livt_size (linker command file)
+#>00000000          F_Livt_RAM_addr (linker command file)
+#>00000000          F_Livt_ROM_addr (linker command file)
+#>00000000          F_xROM_to_xRAM (linker command file)
+#>00000001          F_pROM_to_xRAM (linker command file)
+#>00000000          F_pROM_to_pRAM (linker command file)
+#>00000010          F_start_bss (linker command file)
+#>00000028          F_end_bss (linker command file)
+#>00000328          __DATA_END (linker command file)
+
+
+# Memory map:
+  v_addr   p_addr   size     name
+  0000F000 0000F000 00000000            .x_Peripherals
+  00000000 00000000 00000004 .interrupt_vectorsboot .p_Interruptsboot
+  00000000 00000000 00000066 .interrupt_vectors .p_Interrupts
+  00000066 00000066 00000554 .ApplicationCode .p_Code
+  00000001 00000001 00000327 .ApplicationData .x_Data
+  000005BA 00000001 0000000D .data_in_p_flash_ROM .p_flash_ROM_data
+  00008000 00008000 00000400            .p_internal_RAM
+
+# Link start time: Sun Dec 20 18:51:34 2015
+# Link end time: Sun Dec 20 18:51:34 2015

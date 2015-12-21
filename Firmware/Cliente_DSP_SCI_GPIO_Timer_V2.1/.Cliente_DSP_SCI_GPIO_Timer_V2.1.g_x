@@ -1,0 +1,70 @@
+<CodeGenerationInfo>
+  <ToolchainSettings>
+    <option>
+      <name>PE_G_4PEx_ToolChain_Compiler_SearchUserPaths</name>
+      <values lines_count="2">
+        <Line>"${ProjDirPath}/Sources"</Line>
+        <Line>"${ProjDirPath}/Generated_Code"</Line>
+      </values>
+    </option>
+  </ToolchainSettings>
+  <GeneratedFilesList>
+    <GeneratedByPE>
+      <File Name="Project_Settings/Startup_Code/56F80xx_init.asm" FileDate="2015-11-24, 22:57:09" FileAge="1448416629250" FileType="16384" CompNumb="2" />
+      <File Name="Documentation/doxygen/Cliente_DSP_SCI_GPIO_Timer_V2.1.txt" FileDate="2015-12-19, 10:51:47" FileAge="1450533107518" FileType="45637" CompNumb="2" />
+      <File Name="Generated_Code/LED4.h" FileDate="2015-12-19, 10:51:47" FileAge="1450533107557" FileType="45637" CompNumb="32" />
+      <File Name="Project_Settings/Linker_Files/FLASH_SDM.cmd" FileDate="2015-12-19, 10:51:47" FileAge="1450533107527" FileType="8" CompNumb="2" />
+      <File Name="Generated_Code/Inhr7.h" FileDate="2015-12-19, 10:51:47" FileAge="1450533107564" FileType="45637" CompNumb="33" />
+      <File Name="Generated_Code/LED4.c" FileDate="2015-12-19, 10:51:47" FileAge="1450533107554" FileType="45637" CompNumb="32" />
+      <File Name="Generated_Code/AS1.h" FileDate="2015-12-19, 10:51:47" FileAge="1450533107624" FileType="45637" CompNumb="14" />
+      <File Name="Generated_Code/Inhr7.c" FileDate="2015-12-19, 10:51:47" FileAge="1450533107561" FileType="45637" CompNumb="33" />
+      <File Name="Generated_Code/AS1.c" FileDate="2015-12-19, 10:51:47" FileAge="1450533107620" FileType="45637" CompNumb="14" />
+      <File Name="Generated_Code/LED3.h" FileDate="2015-12-19, 10:51:47" FileAge="1450533107571" FileType="45637" CompNumb="30" />
+      <File Name="Generated_Code/LED_Act.h" FileDate="2015-12-19, 10:51:47" FileAge="1450533107597" FileType="45637" CompNumb="26" />
+      <File Name="Generated_Code/Inhr6.h" FileDate="2015-12-19, 10:51:47" FileAge="1450533107577" FileType="45637" CompNumb="31" />
+      <File Name="Sources/main.c" FileDate="2015-12-19, 22:24:28" FileAge="1450574668652" FileType="128" />
+      <File Name="Generated_Code/RTS_Signal.h" FileDate="2015-12-19, 10:51:47" FileAge="1450533107629" FileType="45637" CompNumb="13" />
+      <File Name="Generated_Code/LED3.c" FileDate="2015-12-19, 10:51:47" FileAge="1450533107567" FileType="45637" CompNumb="30" />
+      <File Name="Generated_Code/LED_Act.c" FileDate="2015-12-19, 10:51:47" FileAge="1450533107593" FileType="45637" CompNumb="26" />
+      <File Name="Generated_Code/Inhr6.c" FileDate="2015-12-19, 10:51:47" FileAge="1450533107574" FileType="45637" CompNumb="31" />
+      <File Name="Sources/Events.h" FileDate="2015-12-09, 00:14:58" FileAge="1449630898891" FileType="131328" />
+      <File Name="Generated_Code/RTS_Signal.c" FileDate="2015-12-19, 10:51:47" FileAge="1450533107626" FileType="45637" CompNumb="13" />
+      <File Name="Documentation/doxygen/pex.css" FileDate="2015-11-24, 22:57:09" FileAge="1448416629100" FileType="16384" CompNumb="2" />
+      <File Name="Generated_Code/LED2.h" FileDate="2015-12-19, 10:51:47" FileAge="1450533107584" FileType="45637" CompNumb="28" />
+      <File Name="Sources/Events.c" FileDate="2015-12-17, 00:57:18" FileAge="1450324638855" FileType="131328" />
+      <File Name="Generated_Code/Inhr5.h" FileDate="2015-12-19, 10:51:47" FileAge="1450533107590" FileType="45637" CompNumb="29" />
+      <File Name="Documentation/doxygen/pex.doxyfile" FileDate="2015-12-19, 10:51:47" FileAge="1450533107515" FileType="45637" CompNumb="2" />
+      <File Name="Generated_Code/PE_Const.h" FileDate="2015-12-19, 10:51:47" FileAge="1450533107544" FileType="45637" />
+      <File Name="Generated_Code/LED2.c" FileDate="2015-12-19, 10:51:47" FileAge="1450533107581" FileType="45637" CompNumb="28" />
+      <File Name="Generated_Code/PE_Types.h" FileDate="2015-12-19, 10:51:47" FileAge="1450533107550" FileType="45637" />
+      <File Name="Generated_Code/PE_Error.h" FileDate="2015-12-19, 10:51:47" FileAge="1450533107547" FileType="45637" />
+      <File Name="Generated_Code/Inhr5.c" FileDate="2015-12-19, 10:51:47" FileAge="1450533107587" FileType="45637" CompNumb="29" />
+      <File Name="Generated_Code/IO_Map.h" FileDate="2015-12-19, 10:51:47" FileAge="1450533107540" FileType="45637" />
+      <File Name="Generated_Code/Inhr4.h" FileDate="2015-12-19, 10:51:47" FileAge="1450533107616" FileType="45637" CompNumb="22" />
+      <File Name="Generated_Code/Cpu.h" FileDate="2015-12-19, 10:51:47" FileAge="1450533107535" FileType="45637" CompNumb="2" />
+      <File Name="Generated_Code/Inhr4.c" FileDate="2015-12-19, 10:51:47" FileAge="1450533107613" FileType="45637" CompNumb="22" />
+      <File Name="Documentation/doxygen/RoutingReport.txt" FileDate="2015-11-24, 22:57:09" FileAge="1448416629319" FileType="45637" CompNumb="2" />
+      <File Name="Generated_Code/Cpu.c" FileDate="2015-12-19, 10:51:47" FileAge="1450533107532" FileType="45637" CompNumb="2" />
+      <File Name="Generated_Code/Inhr3.h" FileDate="2015-12-19, 10:51:47" FileAge="1450533107647" FileType="45637" CompNumb="11" />
+      <File Name="Documentation/Cliente_DSP_SCI_GPIO_Timer_V2.1_Settings.xml" FileDate="2015-12-19, 10:51:47" FileAge="1450533107711" FileType="3072" />
+      <File Name="Generated_Code/Inhr3.c" FileDate="2015-12-19, 10:51:47" FileAge="1450533107644" FileType="45637" CompNumb="11" />
+      <File Name="Generated_Code/LED_CLIENTE.h" FileDate="2015-12-19, 10:51:47" FileAge="1450533107641" FileType="45637" CompNumb="10" />
+      <File Name="Generated_Code/LED_CLIENTE.c" FileDate="2015-12-19, 10:51:47" FileAge="1450533107638" FileType="45637" CompNumb="10" />
+      <File Name="Generated_Code/Inhr2.h" FileDate="2015-12-19, 10:51:47" FileAge="1450533107659" FileType="45637" CompNumb="9" />
+      <File Name="Generated_Code/LED_PC.h" FileDate="2015-12-19, 10:51:47" FileAge="1450533107653" FileType="45637" CompNumb="8" />
+      <File Name="Generated_Code/Inhr2.c" FileDate="2015-12-19, 10:51:47" FileAge="1450533107656" FileType="45637" CompNumb="9" />
+      <File Name="Generated_Code/LED_PC.c" FileDate="2015-12-19, 10:51:47" FileAge="1450533107650" FileType="45637" CompNumb="8" />
+      <File Name="Generated_Code/btnSending.h" FileDate="2015-12-19, 10:51:47" FileAge="1450533107610" FileType="45637" CompNumb="21" />
+      <File Name="Generated_Code/Inhr1.h" FileDate="2015-12-19, 10:51:47" FileAge="1450533107603" FileType="45637" CompNumb="27" />
+      <File Name="Generated_Code/Vectors.c" FileDate="2015-12-19, 10:51:47" FileAge="1450533107522" FileType="45637" CompNumb="2" />
+      <File Name="Generated_Code/assert.h" FileDate="2015-12-19, 10:51:47" FileAge="1450533107662" FileType="45637" />
+      <File Name="Generated_Code/btnSending.c" FileDate="2015-12-19, 10:51:47" FileAge="1450533107606" FileType="45637" CompNumb="21" />
+      <File Name="Generated_Code/TI1.h" FileDate="2015-12-19, 10:51:47" FileAge="1450533107635" FileType="45637" CompNumb="12" />
+      <File Name="Documentation/Cliente_DSP_SCI_GPIO_Timer_V2.1.txt" FileDate="2015-12-19, 10:51:47" FileAge="1450533107723" FileType="3072" />
+      <File Name="Generated_Code/Inhr1.c" FileDate="2015-12-19, 10:51:47" FileAge="1450533107600" FileType="45637" CompNumb="27" />
+      <File Name="Generated_Code/TI1.c" FileDate="2015-12-19, 10:51:47" FileAge="1450533107632" FileType="45637" CompNumb="12" />
+      <File Name="Documentation/Cliente_DSP_SCI_GPIO_Timer_V2.1_SIGNALS.txt" FileDate="2015-12-20, 17:55:06" FileAge="1450644906785" FileType="3072" />
+    </GeneratedByPE>
+  </GeneratedFilesList>
+  <CodeGenReference>4</CodeGenReference>
+</CodeGenerationInfo>

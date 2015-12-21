@@ -1,0 +1,22 @@
+"$(ProjDirPath)/Project_Settings/Linker_Files/ProcessorExpert.prm"
+-M
+-ViewHidden
+-WmsgFob"%f%e:%l:%k:%d %m\n"
+-WmsgSd1100
+-WmsgSd1912 
+-Add("$(ProjDirPath)/FLASH/Sources/Events_c.obj"
+"$(ProjDirPath)/FLASH/Sources/Funciones_c.obj"
+"$(ProjDirPath)/FLASH/Sources/main_c.obj"
+"$(ProjDirPath)/FLASH/Project_Settings/Startup_Code/start08_c.obj"
+"$(ProjDirPath)/FLASH/Generated_Code/AS1_c.obj"
+"$(ProjDirPath)/FLASH/Generated_Code/Cpu_c.obj"
+"$(ProjDirPath)/FLASH/Generated_Code/IO_Map_c.obj"
+"$(ProjDirPath)/FLASH/Generated_Code/Led_Actividad_c.obj"
+"$(ProjDirPath)/FLASH/Generated_Code/RTS_Signal_c.obj"
+"$(ProjDirPath)/FLASH/Generated_Code/Rele_A_c.obj"
+"$(ProjDirPath)/FLASH/Generated_Code/Rele_B_c.obj"
+"$(ProjDirPath)/FLASH/Generated_Code/Rele_M_c.obj"
+"$(ProjDirPath)/FLASH/Generated_Code/Rele_N_c.obj"
+"$(ProjDirPath)/FLASH/Generated_Code/TI1_c.obj"
+"$(ProjDirPath)/FLASH/Generated_Code/Vectors_c.obj"
+"$(MCUToolsBaseDirEnv)/lib/hc08c/lib/ansiis.lib" )

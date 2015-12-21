@@ -1,0 +1,9 @@
+C:\Users\cdeleon\documents\visual studio 2010\Projects\SerialPort\SerialPort\bin\Debug\SerialPort.exe
+C:\Users\cdeleon\documents\visual studio 2010\Projects\SerialPort\SerialPort\bin\Debug\SerialPort.pdb
+C:\Users\cdeleon\documents\visual studio 2010\Projects\SerialPort\SerialPort\bin\Debug\SerialPort.xml
+C:\Users\cdeleon\documents\visual studio 2010\Projects\SerialPort\SerialPort\obj\x86\Debug\WindowsApplication1.Form1.resources
+C:\Users\cdeleon\documents\visual studio 2010\Projects\SerialPort\SerialPort\obj\x86\Debug\WindowsApplication1.Resources.resources
+C:\Users\cdeleon\documents\visual studio 2010\Projects\SerialPort\SerialPort\obj\x86\Debug\SerialPort.vbproj.GenerateResource.Cache
+C:\Users\cdeleon\documents\visual studio 2010\Projects\SerialPort\SerialPort\obj\x86\Debug\SerialPort.exe
+C:\Users\cdeleon\documents\visual studio 2010\Projects\SerialPort\SerialPort\obj\x86\Debug\SerialPort.xml
+C:\Users\cdeleon\documents\visual studio 2010\Projects\SerialPort\SerialPort\obj\x86\Debug\SerialPort.pdb
